@@ -1,0 +1,100 @@
+@font-face {
+    font-family: poppins;
+    src: url(../CSS/fonts/Poppins.ttf);
+}
+
+@font-face {
+    font-family: titilium;
+    src: url(../CSS/fonts/Titilium.ttf);
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+
+    transition: 100ms;
+}
+
+header button:hover {
+    background-color: rgb(185, 54, 61,1);
+    cursor: pointer;
+}
+
+header .squareIcon:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header p {
+    font-family: titilium;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+}
+
+.headerSpacing {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(139, 46, 51, 1);
+}
+
+
+.headerLeftButtons {
+    display: flex;
+}
+
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.squareIcon {
+    padding: 8px 11px;
+}
+
+.homeIcon {
+    margin: 0px 0px 0px 17px;
+}
+
+header img {
+    width: 30px;
+}
+
+
+.headerMidDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.headerMid {
+    position: absolute;
+    top: -10px;
+}
+
+.headerMid button:hover {
+    background-color: transparent;
+}
+
+.headerMid img {
+    width: 125px;
+}
