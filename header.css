@@ -1,17 +1,26 @@
 @font-face {
     font-family: poppins;
-    src: url(../CSS/fonts/Poppins.ttf);
+    src: url(./CSS/fonts/Poppins.ttf);
 }
 
 @font-face {
     font-family: titilium;
-    src: url(../CSS/fonts/Titilium.ttf);
+    src: url(./CSS/fonts/Titilium.ttf);
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
 }
 
 header button {
     background-color: transparent;
     border: none;
-    padding: 15px 40px;
+    padding: 1.25rem 2.938rem;
+    margin: 0px 0.375rem;
     color: white;
     font-weight: bold;
 
@@ -19,22 +28,19 @@ header button {
 }
 
 header button:hover {
-    background-color: rgb(185, 54, 61,1);
+    background-color: rgb(185, 54, 61, 1);
     cursor: pointer;
 }
 
-header .squareIcon:hover {
+header .squareIcon:hover,
+.headerMid button:hover {
     cursor: pointer;
     background-color: transparent;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 header p {
     font-family: titilium;
-    font-size: 16px;
+    font-size: 1.25rem;
     letter-spacing: 1px;
 }
 
@@ -44,28 +50,24 @@ p {
     padding: 0;
 }
 
-header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    
-    width: 100%;
+
+.headerLeft,
+.headerRight,
+.headerLeftButtons {
+    display: flex;
+    align-items: center;
 }
+
+.headerMidDiv {
+    display: flex;
+    justify-content: center;
+}
+
 
 .headerSpacing {
     display: flex;
     justify-content: space-between;
     background-color: rgb(139, 46, 51, 1);
-}
-
-
-.headerLeftButtons {
-    display: flex;
-}
-
-.headerLeft, .headerRight {
-    display: flex;
-    align-items: center;
 }
 
 .squareIcon {
@@ -81,20 +83,21 @@ header img {
 }
 
 
-.headerMidDiv {
-    display: flex;
-    justify-content: center;
-}
-
 .headerMid {
     position: absolute;
-    top: -10px;
+    top: 0.313rem;
 }
 
-.headerMid button:hover {
-    background-color: transparent;
+.headerMid button {
+    padding: 0;
+    margin: 0;
 }
 
 .headerMid img {
-    width: 125px;
+    width: 9.375rem;
+}
+
+
+.wordLidButton {
+    background-color: orange;
 }
