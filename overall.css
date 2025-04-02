@@ -1,3 +1,94 @@
+/* FONTS */
+@font-face {
+    font-family: poppins;
+    src: url(./CSS/fonts/Poppins.ttf);
+}
+
+@font-face {
+    font-family: titilium;
+    src: url(./CSS/fonts/Titilium.ttf);
+}
+
+
+/* ZET PAGINA ONDER DE HEADER */
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     margin-top: 70px;
+}
+
+body {
+    background-color: rgba(246, 242, 242, 1);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+title,
+li,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: titilium;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+title,
+li,
+ul,
+::placeholder,
+a {
+    font-family: poppins;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+button {
+    font-weight: bold;
+    font-family: poppins;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.greenButton {
+    background-color: rgba(75, 195, 140, 1);
+    border: none;
+    border-radius: 10px;
+    transition: 100ms;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.greenButton:hover {
+    background-color: rgba(119, 248, 198, 1);
 }

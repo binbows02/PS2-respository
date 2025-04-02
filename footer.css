@@ -1,0 +1,189 @@
+/* GLOBALE CSS */
+
+footer {
+    position: absolute;
+    background-color: rgba(35, 23, 25, 1);
+    width: 100%;
+}
+
+.footerContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.footerTitle {
+    font-size: 16px;
+    background-color: rgba(139, 46, 51, 0.5);
+    padding: 15px 0px;
+}
+
+nav a {
+    color: rgb(255, 255, 255, 0.75);
+    font-weight: 1;
+    letter-spacing: 0px;
+}
+
+footer h1 {
+    margin: 0px 0px 40px 0px
+}
+
+.footerLeft,
+.footerMid,
+.footerRight {
+    position: relative;
+    top: -40px;
+}
+
+/* FOOTER LINKS */
+
+form img {
+    width: 30px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+form input,
+form textarea {
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: poppins;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=number] {
+    padding-left: 45px;
+}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+    color: transparent;
+}
+
+.placeholderIcon,
+.required,
+.verstuur {
+    position: absolute;
+}
+
+.placeholderIcon {
+    opacity: 40%;
+    margin: 0px 0px 0px 10px;
+    width: 25px;
+}
+
+.required {
+    right: 10px;
+}
+
+.verstuur {
+    bottom: 40px;
+    right: 10px;
+
+    width: 110px;
+    height: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea::placeholder {
+    padding: 10px 0px 0px 10px;
+}
+
+.vraag {
+    width: 100%;
+    height: 200px;
+}
+
+
+/* FOOTER MIDDEN */
+
+.footerMid h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.footerMid img {
+    background-color: rgba(185, 54, 61, 1);
+    width: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.midContainer {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.footerMid ul {
+    margin: 0px 0px 0px 20px;
+}
+
+li {
+    line-height: 40px;
+}
+
+/* FOOTER RECHTS */
+
+.footerRightSpacing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.footerRight button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(185, 54, 61, 1);
+    border: none;
+    margin: 0px 10px 0px 0px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+
+    transition: 100ms;
+}
+
+.footerRight img {
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footerRight button:hover {
+    background-color: rgb(212, 88, 84);
+    transform: translateY(-4px);
+}
+
+.footerRight nav a {
+    margin: 0px 5px;
+}
+
+
+/* UP ARROW */
+
+.upArrow {
+    padding: 13px 19.55px;
+
+    font-size: 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.upArrow:hover,
+.verstuur:hover {
+    background-color: rgba(119, 248, 198, 1);
+}
