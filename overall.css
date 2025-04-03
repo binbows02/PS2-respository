@@ -9,14 +9,20 @@
     src: url(./CSS/fonts/Titilium.ttf);
 }
 
+@font-face {
+    font-family: poppinsB;
+    src: url(./CSS/fonts/Poppins-Bold.ttf);
+}
+
 
 /* ZET PAGINA ONDER DE HEADER */
 html {
     scroll-behavior: smooth;
 }
 
-main {
-    margin-top: 70px;
+main,
+picture {
+    margin-top: 60px;
 }
 
 body {
@@ -30,7 +36,6 @@ h2,
 h3,
 h4,
 h5,
-title,
 li,
 ul,
 a {
@@ -51,7 +56,6 @@ h2,
 h3,
 h4,
 h5,
-title,
 li,
 ul,
 ::placeholder,
@@ -86,7 +90,7 @@ button {
     border: none;
     border-radius: 10px;
     transition: 100ms;
-    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
 }
 
 .greenButton:hover {

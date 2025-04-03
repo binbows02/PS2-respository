@@ -1,0 +1,116 @@
+/* HOME PAGINA TOP */
+
+.topPagina {
+    height: 100vh;
+    width: 100%;
+}
+
+picture img {
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    width: 100%;
+    height: 94vh;
+    object-fit: cover;
+
+    filter: brightness(50%);
+}
+
+.blackFade {
+    z-index: -1;
+    left: -2px;
+    height: 40vh;
+
+    object-fit: fill;
+    opacity: 80%;
+}
+
+.TPTitel {
+    width: 40vw;
+    margin: 13vw 0px 0px 8vw;
+}
+
+.TPTitel h1,
+.TPTitel a,
+.lidmaatschapKnop {
+    font-family: poppinsB;
+    letter-spacing: 0;
+}
+
+.TPTitel h1 {
+    font-size: 2.7vw;
+}
+
+.TPTitel a {
+    display: flex;
+    font-size: 1.5vw;
+    margin-top: 5.2vh;
+    width: 15.625vw;
+}
+
+.lidmaatschapKnop {
+    padding: 2.2vh 2.4vw;
+    font-size: 1.3vw;
+
+    background-color: rgba(75, 195, 140, 1);
+    border: none;
+    border-radius: 10px;
+    transition: 100ms;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.75);
+}
+
+.lidmaatschapKnop:hover {
+    background-color: rgba(119, 248, 198, 1);
+}
+
+.TPKnoppen {
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 43vw;
+    border-radius: 10px;
+    padding: 20px 0px;
+    margin-top: 15.7vh;
+}
+
+.TPKnoppen button {
+    margin-left: 7.8vw;
+}
+
+.TPKnoppen a {
+    font-size: 1vw;
+    margin-left: 5vw;
+
+    transition: 100ms;
+}
+
+.TPKnoppen a:hover {
+    color: rgba(119, 248, 198, 1);
+}
+
+.TPGallerij {
+    position: absolute;
+    right: 0;
+    bottom: 15.7vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.04vh 1.1vw 1.04vh 2.6vw;
+}
+
+.TPGallerij button {
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+
+    opacity: 80%;
+    transition: 300ms;
+}
+
+.TPGallerij button img {
+    width: 40px;
+}
+
+.TPGallerij button:hover {
+    opacity: 100%;
+    transform: translateX(-0.8vw);
+}
