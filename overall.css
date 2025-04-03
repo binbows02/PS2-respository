@@ -20,11 +20,6 @@ html {
     scroll-behavior: smooth;
 }
 
-main,
-picture {
-    margin-top: 60px;
-}
-
 body {
     background-color: rgba(246, 242, 242, 1);
     margin: 0;
