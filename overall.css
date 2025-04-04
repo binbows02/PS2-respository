@@ -91,3 +91,35 @@ button {
 .greenButton:hover {
     background-color: rgba(119, 248, 198, 1);
 }
+
+
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.contentContainer {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+}
+
+.headingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.headingText {
+    background-color: rgba(139, 46, 51, 1);
+    width: 25vw;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.contentContainer h2 {
+    color: black;
+}

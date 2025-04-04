@@ -114,3 +114,73 @@ picture img {
     opacity: 100%;
     transform: translateX(-0.8vw);
 }
+
+
+/* CONTENT */
+
+.clubDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clubDiv h2 {
+    font-family: poppinsB;
+    letter-spacing: 0px;
+    font-size: 1.3vw;
+}
+
+.volgendeWedstrijd img {
+    width: 8vw;
+}
+
+.volgendeWedstrijd {
+    width: 60vw;
+    padding: 50px;
+}
+
+.VWclubs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VS {
+    font-family: titilium;
+    color: rgb(90, 90, 90);
+    font-size: 50px;
+}
+
+.VWlocatie {
+    display: flex;
+    width: 18vw;
+}
+
+.VWbottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.VWbottomLeft {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.VWlocatie p {
+    font-size: 0.7vw;
+}
+
+.VWlocatie img {
+    width: 1.4vw;
+    object-fit: contain;
+}
+
+.VWlocatie span {
+    color: rgba(139, 46, 51, 1);
+}
