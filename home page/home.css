@@ -125,6 +125,10 @@ picture img {
     bottom: 50px;
 }
 
+.VWwidth {
+    width: 75vw;
+}
+
 .VWcenter {
     display: flex;
     justify-content: center;
@@ -161,7 +165,7 @@ picture img {
 .VWclubs div {
     display: flex;
     justify-content: center;
-    width: 15vw;
+    width: 20vw;
 }
 
 .VolWed h3 {
