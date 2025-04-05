@@ -32,8 +32,7 @@ h3,
 h4,
 h5,
 li,
-ul,
-a {
+ul {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
@@ -57,6 +56,14 @@ ul,
 a {
     font-family: poppins;
     font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: white;
 }
 
 ul {
@@ -92,34 +99,57 @@ button {
     background-color: rgba(119, 248, 198, 1);
 }
 
+/* CONTENT */
 
+.heading {
+    background-color: rgba(139, 46, 51, 1);
+    width: 350px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
 
-.centerHeader {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+    position: relative;
+    bottom: -40px;
+
+    z-index: 2;
 }
 
-.contentContainer {
-    background-color: white;
+.heading h1 {
+    font-size: 22px;
+}
+
+.contentWidth {
+    max-width: 80vw;
+}
+
+.contentBox p {
+    margin: 0;
+}
+
+.contentBox {
+    position: relative;
+    padding: 60px 20px 20px 20px;
+    background-color: rgb(255, 255, 255);
+
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
 }
 
-.headingText {
+.contentContainer {
     display: flex;
+    margin: 0px 0px 40px 0px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    background-color: white;
 }
 
-.headingText {
-    background-color: rgba(139, 46, 51, 1);
-    width: 25vw;
-    height: 10vh;
-    border-radius: 10px;
-}
-
-.contentContainer h2 {
+.contentBox h2 {
     color: black;
+}
+
+.contentBox h3 {
+    color: rgb(26, 26, 26);
 }

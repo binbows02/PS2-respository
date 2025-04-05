@@ -118,6 +118,61 @@ picture img {
 
 /* CONTENT */
 
+/* Volgende Wedstrijd */
+
+.VolWed {
+    position: relative;
+    bottom: 50px;
+}
+
+.VWcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VWheading {
+    background-color: rgba(139, 46, 51, 1);
+    width: 390px;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VWheading h1 {
+    font-size: 25px;
+}
+
+.VWclubsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.VWclubs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.VWclubs div {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+}
+
+.VolWed h3 {
+    font-family: titilium;
+    font-size: 50px;
+}
+
+.VWclubs img {
+    width: 140px;
+}
+
 .clubDiv {
     display: flex;
     flex-direction: column;
@@ -127,60 +182,102 @@ picture img {
 .clubDiv h2 {
     font-family: poppinsB;
     letter-spacing: 0px;
-    font-size: 1.3vw;
+    font-size: 22px;
 }
 
-.volgendeWedstrijd img {
-    width: 8vw;
-}
-
-.volgendeWedstrijd {
-    width: 60vw;
-    padding: 50px;
-}
-
-.VWclubs {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.centerContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.VS {
-    font-family: titilium;
-    color: rgb(90, 90, 90);
-    font-size: 50px;
-}
-
-.VWlocatie {
-    display: flex;
-    width: 18vw;
+.VWbottom div {
+    width: 20.8vw;
 }
 
 .VWbottom {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0px 0px 0px;
 }
 
-.VWbottomLeft {
+.VWdatum,
+.VWuitslagen,
+.VWloc {
     position: relative;
-    bottom: 0;
-    left: 0;
 }
 
-.VWlocatie p {
-    font-size: 0.7vw;
+.VWloc {
+    display: flex;
+    align-items: center;
+    width: 400px;
+
+    bottom: -15px;
 }
 
-.VWlocatie img {
-    width: 1.4vw;
+.VWloc p {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.VWloc span {
+    color: rgba(139, 46, 51, 1);
+}
+
+.VWloc img {
+    width: 25px;
     object-fit: contain;
 }
 
-.VWlocatie span {
+.VWdatum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VWdatum p {
+    font-size: 24px;
+    font-family: poppinsB;
+}
+
+.VWdatum span {
+    color: rgba(75, 195, 140, 1);
+}
+
+.VWuitslagen {
+    display: flex;
+    justify-content: right;
+}
+
+.VWuitslagen button {
+    padding: 17px 53px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.10);
+    background-color: rgba(223, 152, 52, 1);
+
+    font-size: 19px;
+    border: none;
+
+    transition: 100ms;
+}
+
+.VWuitslagen button:hover {
+    background-color: rgba(255, 219, 110, 1);
+    border: none;
+}
+
+/* Wedstrjdschema */
+
+.WScontent img {
+    padding: 80px 100px;
+}
+
+.WScontent p,
+.WScontent a {
+    font-size: 14px;
+}
+
+.WScontent a {
+    font-weight: normal;
     color: rgba(139, 46, 51, 1);
+}
+
+.WScontent p {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }

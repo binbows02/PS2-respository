@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../CSS/images/vcs.png">
     <title>Welkom bij VCS</title>
-    
     <link rel="stylesheet" href="home.css">
+
+    <!-- Standaard voor elke pagina, zodat ik voor elke aparte css geen zelfde code hoef te plakken. -->
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../overall.css">
     <link rel="stylesheet" href="../header.css">
@@ -15,7 +16,7 @@
 
     <header>
         <div class="headerSpacing">
-            <div class="headerLeft">
+            <nav class="headerLeft">
                 <button class="squareIcon homeIcon" onclick="window.open('../home page/index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
@@ -25,9 +26,9 @@
                     <button onclick="window.open('../Roosteres/roosters.html','_self');">Roosters</button>
                     <button onclick="window.open('../Ons team/ons team.html','_self');">Ons team</button>
                 </div>
-            </div>
+            </nav>
 
-            <div class="headerRight">
+            <nav class="headerRight">
                 <button onclick="window.open('../Over ons/over ons.html','_self')">Over ons</button>
 
                 <div class="langSearchDiv">
@@ -42,15 +43,15 @@
 
                 <button class="wordLidButton" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid</button>
                 <button class="loginIcon" onclick="window.open('../Inloggen/inlog.html','_self')"><img src="../CSS/Icons/Login.png" alt="inloggen"></button>
-            </div>
+            </nav>
         </div>
         
         <div class="headerMidDiv">
-            <div class="headerMid">
+            <nav class="headerMid">
                 <button onclick="window.open('../home page/index.html','_self')">
                     <img src="../CSS/images/vcs.png" alt="logo">
                 </button>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -76,53 +77,107 @@
             </picture>
         </div>
 
-        <div class="centerContent">
-            <div class="centerHeader">
-                <h1 class="headingText">Volgende wedstrijd</h1>
-            </div>
+        <!-- Content -->
 
-            <div class="contentContainer volgendeWedstrijd">
-                <div class="VWclubs">
-                    <div class="clubDiv">
-                        <img src="../CSS/images/svmadestein.png" alt="SV Madestein 1">
-                        <h2>SV Madestein 1</h2>
-                    </div>
-        
-                    <div>
-                        <h3 class="VS">VS</h3>
-                    </div>
-        
-                    <div class="clubDiv">
-                        <img src="../CSS/images/vcs.png" alt="VCS">
-                        <h2>VCS 1</h2>
+        <!-- Volgende wedstrijd -->
+        <div class="contentContainer VolWed">
+            <div class="contentWidth">
+                <div class="VWcenter">
+                    <div class="VWheading">
+                        <h1>Volgende wedstrijd</h1>
                     </div>
                 </div>
     
-                <div class="VWlocatie">
-                    <img src="../CSS/Icons/Location red.png" alt="Locatie">
-                    <p>Leidschenveen <span>(Den Haag)</span> | Vaz Diasdreef 20 2492JL <span>'S-GRAVENHAGE</span></p>
-                </div>
-                
-                <div>
-                    <p>Ma. <span>(14:30)</span></p>
-                    <p>5 Maart</p>
+                <div class="contentBox">
+                    <div class="VWclubsContainer">
+                        <div class="VWclubs">
+                            <div class="clubDiv">
+                                <img src="../CSS/images/svmadestein.png" alt="SV Madestein 1">
+                                <h2>SV Madestein 1</h2>
+                            </div>
+        
+                            <div>
+                                <h3>VS</h3>
+                            </div>
+        
+                            <div class="clubDiv">
+                                <img src="../CSS/images/vcs.png" alt="VCS 1">
+                                <h2>VCS 1</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="VWbottom">
+                        <div class="VWloc">
+                            <img src="../CSS/Icons/Location red.png" alt="Loc">
+                            <p>Leidschenveen <span>(Den Haag)</span> | Vaz Diasdreef 20 2492JL <span>'S-GRAVENHAGE</span></p>
+                        </div>
+    
+                        <div class="VWdatum">
+                            <p>Ma. <span>14:30</span></p>
+                            <p>5 Maart</p>
+                        </div>
+    
+                        <div class="VWuitslagen">
+                            <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <button>
-                        Uitslagen
-                    </button>
+            </div>
+        </div>
+
+        <!-- Wedstrijdschema -->
+        <div class="contentContainer">
+            <div class="contentWidth">
+                <div class="heading">
+                    <h1>Wedstrijdschema</h1>
+                </div>
+    
+                <div class="contentBox WScontent">
+                    <p>Wedstrijdschema van <a href="https://voetbal.nl/" target="_blank">voetbal.nl</a></p>
+
+                    <img src="../CSS/images/voetbal_nl.png" alt="">
                 </div>
             </div>
         </div>
 
-        <div>
-            <div class="centerHeader">
-                <h1 class="headingText">Volgende wedstrijd</h1>
+        <!-- Vacatures -->
+        <div class="contentContainer">
+            <div class="contentWidth">
+                <div class="heading">
+                    <h1>Wedstrijdschema</h1>
+                </div>
+    
+                <div class="contentBox">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quia maxime? Pariatur rerum magnam, laboriosam vero mollitia facilis doloribus ullam voluptatem excepturi voluptas sint minus molestiae reiciendis, molestias perspiciatis error!</p>
+                </div>
             </div>
+        </div>
 
-            <div class="contentContainer">
-                <p>test</p>
+        <!-- Nieuws -->
+        <div class="contentContainer">
+            <div class="contentWidth">
+                <div class="heading">
+                    <h1>Wedstrijdschema</h1>
+                </div>
+    
+                <div class="contentBox">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quia maxime? Pariatur rerum magnam, laboriosam vero mollitia facilis doloribus ullam voluptatem excepturi voluptas sint minus molestiae reiciendis, molestias perspiciatis error!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Samenwerkingen -->
+        <div class="contentContainer">
+            <div class="contentWidth">
+                <div class="heading">
+                    <h1>Wedstrijdschema</h1>
+                </div>
+    
+                <div class="contentBox">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, quia maxime? Pariatur rerum magnam, laboriosam vero mollitia facilis doloribus ullam voluptatem excepturi voluptas sint minus molestiae reiciendis, molestias perspiciatis error!</p>
+                </div>
             </div>
         </div>
     </main>
