@@ -97,11 +97,6 @@ header img {
 
 
 /* HEADER RECHTS */
-
-.headerRight {
-    margin: 0px 70px 0px 0px;
-}
-
 .langSearch {
     margin: 0px;
     padding: 8px;
@@ -130,9 +125,57 @@ header img {
 .loginIcon:hover {
     background-color: rgba(114, 29, 34, 1);
     border: none;
-    margin-bottom: 4px;
+}
+
+.loggedOut img {
+    transition: 100ms;
+}
+
+.loggedOut:hover img {
+    transform: translateY(-2px);
 }
 
 .loginIcon img {
     width: 40px;
+}
+
+.gebruikerDiv {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.gebruikerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    margin: 0px 0px 0px 10px;
+}
+
+.gebruikerInfo p {
+    font-size: 15px;
+}
+
+.gebruikerDiv {
+    padding: 0px 70px 0px 0px;
+    height: 100%;
+
+    transition: 100ms;
+}
+
+.gebruikerInfo .VCSuser {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.loggedIn:hover {
+    cursor: pointer;
+    border-bottom: 3px solid white;
+    background-color: rgba(185, 54, 61, 1);
+}
+
+.gebruikerInfo .VCSrole {
+    font-size: 12px;
 }
