@@ -505,7 +505,3 @@ picture img {
     width: 100%;
     transform: rotate(180deg);
 }
-
-.switchBG {
-    transition: 100ms ease-in;
-}

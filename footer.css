@@ -38,11 +38,11 @@ footer h1 {
 
 /* FOOTER LINKS */
 
-form img {
+footer form img {
     width: 30px;
 }
 
-form div {
+footer form div {
     display: flex;
     align-items: center;
     margin: 30px 0px;
@@ -59,9 +59,9 @@ form textarea {
     font-family: poppins;
 }
 
-form input[type=text],
-form input[type=email],
-form input[type=number] {
+footer form input[type=text],
+footer form input[type=email],
+footer form input[type=number] {
     padding-left: 45px;
 }
 

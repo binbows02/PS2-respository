@@ -104,6 +104,11 @@ button {
     background-color: rgba(119, 248, 198, 1);
 }
 
+.tpg {
+    margin-top: 60px;
+}
+
+
 /* CONTENT */
 
 .heading {
@@ -156,4 +161,44 @@ button {
 
 .contentBox h3 {
     color: rgb(26, 26, 26);
+}
+
+/* BANNER */
+
+.bannerPicture {
+    position: absolute;
+    z-index: -2;
+}
+
+.bannerRelative {
+    position: relative;
+}
+
+.blackFadeBanner,
+.bannerImage img,
+.bannerPicture {
+    width: 100%;
+    height: 420px;
+}
+
+.bannerImage {
+    z-index: -1;
+}
+
+.bannerImage img {
+    top: 60px;
+    object-fit: cover;
+
+    filter: brightness(50%);
+}
+
+.blackFadeBanner {
+    z-index: 1;
+    position: absolute;
+
+    height: 200px;
+
+    bottom: 5px;
+    object-fit: fill;
+    opacity: 80%;
 }

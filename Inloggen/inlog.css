@@ -1,0 +1,57 @@
+.inlogForm {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 500px;
+    padding: 50px 0px 30px 0px;
+}
+
+.inlogForm h2,
+.inlogForm a {
+    color: black;
+}
+
+.inlogForm a {
+    font-family: poppinsB;
+    color: rgba(56, 56, 56, 0.9);
+}
+
+.inlogForm h2 {
+    font-family: titilium;
+}
+
+.inlogForm input[type=email] {
+    padding-left: 10px;
+}
+
+.gegevensInv {
+    background-color: red;
+    width: 90%;
+}
+
+.formHeader {
+    background-color: rgba(139, 46, 51, 1);
+    width: 270px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formHeaderDiv {
+    position: absolute;
+    top: -40px;
+}
+
+.centerForm {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}

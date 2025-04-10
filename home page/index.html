@@ -41,18 +41,23 @@
                 </div>
 
                 <button class="wordLidButton" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid</button>
-                        <!-- zet de class "loggedIn" erbij als de gebruiker ingelogd is -->
-                <div class="gebruikerDiv">
+                        
+                <!-- zet de class "loggedIn" erbij als de gebruiker ingelogd is -->
+                <div class="gebruikerDiv" onclick="appearGebInst();">
                     <div>
                         <!-- zet de class "loggedOut" erbij als de gebruiker uitgelogd is -->
-                        <button class="loginIcon loggedOut"><img src="../CSS/Icons/Login.png" alt="inloggen"></button>
+                        <button class="loginIcon" onclick="loginOpenWindow();">
+                            <img src="../CSS/Icons/Login.png" alt="inloggen">
+                        </button>
                     </div>
                     
-                    <!-- <div class="gebruikerInfo">
-                        <p class="VCSuser">Sander</p>
-                        <p class="VCSrole">Gebruiker</p>
-                    </div> -->
+                    <div class="gebruikerInfo">
+                        <!-- gegevens (Staat in ../inloggegevens.js) -->
+                    </div>
                 </div>
+
+                <nav class="gebruikerInst">
+                </nav>
             </nav>
         </div>
         
@@ -377,8 +382,12 @@
         </button>
     </footer>
 
-    <script src="../footer.js"></script>
+
     <script src="home.js"></script>
+
+    <!-- Standaard javascript voor alle pagina's, zodat ik de code niet heletijd hoef te plakken -->
+    <script src="../footer.js"></script>
+    <script src="../inloggegevens.js"></script>
     
 </body>
 </html>
