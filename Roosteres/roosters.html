@@ -16,7 +16,7 @@
     <header>
         <div class="headerSpacing">
             <nav class="headerLeft">
-                <button class="squareIcon homeIcon" onclick="window.open('../home page/index.html','_self')">
+                <button class="squareIcon homeIcon" onclick="window.open('../index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
 
@@ -28,7 +28,7 @@
             </nav>
 
             <nav class="headerRight">
-                <button onclick="window.open('../Over ons/over ons.html','_self')">Over ons</button>
+                <button onclick="window.open(`https://www.vcs-dh.nl/891/vcs-historie/`,'_self')">Over ons</button>
 
                 <div class="langSearchDiv">
                     <button class="squareIcon langSearch">
@@ -63,7 +63,7 @@
         
         <div class="headerMidDiv">
             <nav class="headerMid">
-                <button onclick="window.open('../home page/index.html','_self')">
+                <button onclick="window.open('../index.html','_self')">
                     <img src="../CSS/images/vcs.png" alt="logo">
                 </button>
             </nav>
@@ -89,7 +89,7 @@
                         <h1 class="formHeader">Trainingstijden</h1>
                     </div>
                 </div>
-                    
+
                 <div class="roosterBox">
                     <div class="roosterGeslacht">
                         <button class="selected"><img src="../CSS/Icons/man.png" alt="man"></button>
@@ -97,12 +97,34 @@
                     </div>
         
                     <div class="roosterDatum">
-                        <button><</button>
+                        <button>&#10094;</button>
                         <p>Dinsdag</p>
-                        <button>></button>
+                        <button>&#10095;</button>
                     </div>
+
+                    <!-- Zet de class "ingeroosterd" erbij bij degene die het ingeroosterd is -->
         
-                    <div class="roosterData">
+                    <div class="roosterData c1">
+                        <div class="RDinfo">
+                            <div>
+                                <h2>JO8-3</h2>
+                            </div>
+        
+                            <div class="RDtijd">
+                                <p>17:30 - 18:30</p>
+                                <div class="RDloc">
+                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
+                                    <p>4A</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="RDCoach">Reitze Winklaar</p>
+                        </div>
+                    </div>
+
+                    <div class="roosterData c2">
                         <div class="RDinfo">
                             <div>
                                 <h2>JO8-3</h2>
@@ -123,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="roosterData">
+                    <div class="roosterData c3">
                         <div class="RDinfo">
                             <div>
                                 <h2>JO8-3</h2>
@@ -144,7 +166,28 @@
                         </div>
                     </div>
 
-                    <div class="roosterData">
+                    <div class="roosterData c4">
+                        <div class="RDinfo">
+                            <div>
+                                <h2>JO8-3</h2>
+                            </div>
+                            
+        
+                            <div class="RDtijd">
+                                <p>17:30 - 18:30</p>
+                                <div class="RDloc">
+                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
+                                    <p>4A</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="RDCoach">Reitze Winklaar</p>
+                        </div>
+                    </div>
+
+                    <div class="roosterData c5">
                         <div class="RDinfo">
                             <div>
                                 <h2>JO8-3</h2>
@@ -167,27 +210,31 @@
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <h1 class="formHeader">Wedstrijden</h1>
+            <div class="contentDiv">
+                
+                <div class="centerHeader">
+                    <div class="formHeaderPos">
+                        <h1 class="formHeader">Wedstrijden</h1>
+                    </div>
                 </div>
 
-                <div class="roosterBox">
-                    <div>
-                        <button><</button>
+                <div class="wedstrijdBox">
+                    <div class="wedstrijdDatum">
+                        <button>&#10094;</button>
                         <p>Februari</p>
-                        <button>></button>
+                        <button>&#10095;</button>
                     </div>
 
-                    <div>
-                        <img src="" alt="Wedstrijd">
+                    <div class="wedstrijdData">
+                        <img src="../CSS/images/wedstrijd.png" alt="Wedstrijd">
                     </div>
                 </div>
             </div>
-            
-        </div>
 
-        <p style="margin-top: 900px;"></p>
+            <div class="bgFoto">
+                <img src="../CSS/images/bg3.jpg" alt="">
+            </div>
+        </div>
 
     </main>
 
@@ -281,6 +328,7 @@
 
     <script src="../footer.js"></script>
     <script src="../inloggegevens.js"></script>
+    <script src="rooster.js"></script>
     
 </body>
 </html>

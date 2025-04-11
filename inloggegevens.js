@@ -117,15 +117,29 @@ function logOut() {
     gebInst.classList.remove('visible');
     gebInst.innerHTML = '';
 
-    window.open('../home page/index.html', '_self')
+    window.open('../index.html', '_self')
 
     localStorage.setItem('loggedIn', JSON.stringify(loggedIn));
+}
 
+function checkLogin() {
+    let email = document.querySelector(`.emailJS`);
+    let wachtwoord = document.querySelector(`.wachtwoordJS`);
+
+    if (email.value === p1.gegevens.email && wachtwoord.value === p1.gegevens.wachtwoord) {
+        logIn();
+    } else {
+        alert(`
+het emailadres is "sander@gmail.com"
+en het wachtwoord is "sander123" 
+
+;)`);
+    }
 }
 
 function logIn() {
     loggedIn = true;
-    window.open('../home page/index.html', '_self')
+    window.open('../index.html', '_self')
 
     localStorage.setItem('loggedIn', JSON.stringify(loggedIn));
 }

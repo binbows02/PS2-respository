@@ -16,7 +16,7 @@
     <header>
         <div class="headerSpacing">
             <nav class="headerLeft">
-                <button class="squareIcon homeIcon" onclick="window.open('../home page/index.html','_self')">
+                <button class="squareIcon homeIcon" onclick="window.open('../index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
 
@@ -28,7 +28,7 @@
             </nav>
 
             <nav class="headerRight">
-                <button onclick="window.open('../Over ons/over ons.html','_self')">Over ons</button>
+                <button onclick="window.open(`https://www.vcs-dh.nl/891/vcs-historie/`,'_self')">Over ons</button>
 
                 <div class="langSearchDiv">
                     <button class="squareIcon langSearch">
@@ -63,7 +63,7 @@
         
         <div class="headerMidDiv">
             <nav class="headerMid">
-                <button onclick="window.open('../home page/index.html','_self')">
+                <button onclick="window.open('../index.html','_self')">
                     <img src="../CSS/images/vcs.png" alt="logo">
                 </button>
             </nav>
@@ -100,7 +100,7 @@
                             <img src="../CSS/Icons/email.png" alt="Mail">
                         </div>
                         <div>
-                            <input type="email" placeholder="E-mailadres">
+                            <input type="email" placeholder="E-mailadres" class="emailJS">
                         </div>
                     </div>
         
@@ -110,19 +110,19 @@
                             <img src="../CSS/Icons/wachtwoord.png" alt="Wachtwoord">
                         </div>
                         <div>
-                            <input type="password" placeholder="Wachtwoord">
+                            <input type="password" placeholder="Wachtwoord" class="wachtwoordJS">
                         </div>
                     </div>
                 </div>
     
                 <div class="formButtons">
                     <a href="">Ik heb nog geen account</a>
-                    <button type="button" class="greenButton inlogButton" onclick="logIn();">Inloggen</button>
+                    <button type="button" class="greenButton inlogButton" onclick="checkLogin();">Inloggen</button>
                 </div>
             </form>
 
         </div>
-        <p style="margin-top: 900px;"></p>
+        
     </main>
     
     <footer>

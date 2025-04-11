@@ -1,5 +1,6 @@
 .contentDiv {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .centerHeader {
@@ -14,7 +15,8 @@
     top: -25px;
 }
 
-.roosterBox {
+.roosterBox,
+.wedstrijdBox {
     position: relative;
 
     display: flex;
@@ -22,13 +24,18 @@
     align-items: center;
 
     background-color: white;
-    width: 600px;
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 50px 0px;
 
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
-.roosterGeslacht, 
+/* ROOSTER */
+
+.roosterBox {
+    width: 600px;
+}
+
+.roosterGeslacht,
 .roosterDatum {
     width: 85%;
 }
@@ -40,6 +47,7 @@
 .roosterGeslacht {
     display: flex;
     justify-content: center;
+    margin: 0px 0px 20px 0px;
 }
 
 .roosterGeslacht button img {
@@ -64,7 +72,8 @@
     background-color: rgba(234, 51, 35, 1);
 }
 
-.roosterDatum {
+.roosterDatum,
+.wedstrijdDatum {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +85,8 @@
     margin-top: 10px;
 }
 
-.roosterDatum button {
+.roosterDatum button,
+.wedstrijdDatum button {
     width: 40px;
     height: 40px;
     border: none;
@@ -86,7 +96,8 @@
     border-radius: 10px;
 }
 
-.roosterDatum p {
+.roosterDatum p,
+.wedstrijdDatum p {
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -108,7 +119,7 @@
 .roosterData {
     background-color: rgba(246, 242, 242, 1);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
-    
+
     margin-top: 10px;
     padding: 0px 30px;
 
@@ -138,4 +149,32 @@
 
 .RDtijd p {
     font-size: 16px;
+}
+
+/* WEDSTRIJD */
+
+.wedstrijdBox {
+    width: 800px;
+}
+
+.wedstrijdDatum {
+    width: 65%
+}
+
+.wedstrijdData img {
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.ingeroosterd {
+    background-color: rgba(75, 195, 140, 1);
+}
+
+.ingeroosterd p,
+.ingeroosterd h2 {
+    color: white;
+}
+
+.ingeroosterd img {
+    filter: invert();
 }
