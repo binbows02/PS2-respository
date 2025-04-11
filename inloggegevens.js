@@ -103,7 +103,14 @@ function closeGebInstOnClickOutside(event) {
 
 function loginOpenWindow() {
     if (loggedIn === false || loggedIn === null) {
-        window.open('/Inloggen/inlog.html', '_self')
+        // ------------------- Dit deel heb ik gebruik gemaakt van AI -------------------
+        // Ik kon geen andere manier bedenken om de pagina te kunnen laden (op vanaf elke locatie, terwijl index in de root moest staan)..
+        if (!window.location.pathname.includes('index.html')) {
+            window.open('../Inloggen/inlog.html', '_self');
+        } else {
+            window.open('Inloggen/inlog.html', '_self');
+        }
+        // ----------------------------------------------------------------------------
     }
 }
 
