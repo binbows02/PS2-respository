@@ -21,7 +21,7 @@ function switchTPBG() {
         }
 
         fotoKey = `foto${fotoNr}`;
-        TPbg.innerHTML = `<img src="../CSS/images/Gallerij/${TPfotos[fotoKey]}" alt="">`;
+        TPbg.innerHTML = `<img src="CSS/images/Gallerij/${TPfotos[fotoKey]}" alt="">`;
 
     }, 10000);
 }

@@ -103,7 +103,7 @@ function closeGebInstOnClickOutside(event) {
 
 function loginOpenWindow() {
     if (loggedIn === false || loggedIn === null) {
-        window.open('../inloggen/inlog.html', '_self')
+        window.open('inloggen/inlog.html', '_self')
     }
 }
 
