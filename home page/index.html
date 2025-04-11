@@ -7,7 +7,7 @@
     <title>Welkom bij VCS</title>
     <link rel="stylesheet" href="home.css">
 
-    <!-- Standaard voor elke pagina, zodat ik voor elke aparte css geen zelfde css code hoef te plakken. -->
+    <!-- Standaard voor elke pagina, zodat ik voor elke aparte css geen zelfde css code hoef te kopieren en te plakken. -->
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../overall.css">
     <link rel="stylesheet" href="../header.css">
@@ -19,29 +19,23 @@
                 <button class="squareIcon homeIcon" onclick="window.open('../home page/index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
-
                 <div class="headerLeftButtons">
                     <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
                     <button onclick="window.open('../Roosteres/roosters.html','_self');">Roosters</button>
                     <button onclick="window.open('../Ons team/ons team.html','_self');">Ons team</button>
                 </div>
             </nav>
-
             <nav class="headerRight">
                 <button onclick="window.open('../Over ons/over ons.html','_self')">Over ons</button>
-
                 <div class="langSearchDiv">
                     <button class="squareIcon langSearch">
                         <img src="../CSS/Icons/Search.png" alt="search">
                     </button>
-
                     <button class="squareIcon langSearch">
                         <img src="../CSS/Icons/Lang.png" alt="lang">
                     </button>
                 </div>
-
                 <button class="wordLidButton" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid</button>
-                        
                 <!-- zet de class "loggedIn" erbij als de gebruiker ingelogd is -->
                 <div class="gebruikerDiv" onclick="appearGebInst();">
                     <div>
@@ -50,17 +44,15 @@
                             <img src="../CSS/Icons/Login.png" alt="inloggen">
                         </button>
                     </div>
-                    
                     <div class="gebruikerInfo">
-                        <!-- gegevens (Staat in ../inloggegevens.js) -->
+                        <!-- gegevens (Staat in ../inloggegevens.js     regel 39) -->
                     </div>
                 </div>
-
                 <nav class="gebruikerInst">
+                    <!-- Ingelogd menu wanneer je op profiel klikt (Check ../inloggegevens.js   regel 67) -->
                 </nav>
             </nav>
         </div>
-        
         <div class="headerMidDiv">
             <nav class="headerMid">
                 <button onclick="window.open('../home page/index.html','_self')">
@@ -77,16 +69,13 @@
                 <h1>Iedereen, jong en oud, welkom bij VCS Den Haag!</h1>
                 <a href="../Over ons/over ons.html">Jouw Thuis voor Voetbalplezier!</a>
             </div>
-
             <div class="TPKnoppen">
                 <button class="lidmaatschapKnop" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid bij ons!</button>
                 <a href="../Proeftrainingen/proeftrainingen.html">Proeftrainingen</a>
             </div>
-
             <div class="TPGallerij">
                 <button>Gallerij <img src="../CSS/Icons/Image.png" alt=""></button>
             </div>
-            
             <picture>
                 <img src="../CSS/images/blackfade.png" alt="" class="blackFade">
                 <div class="switchBG">
@@ -98,6 +87,7 @@
         <!-------------------------- Content ------------------------>
 
         <div class="CCdiv">
+            
             <!-- Volgende wedstrijd -->
             <div class="contentContainer VolWed">
                 <div class="contentWidth VWwidth">
@@ -106,7 +96,6 @@
                             <h1>Volgende wedstrijd</h1>
                         </div>
                     </div>
-
                     <div class="contentBox">
                         <div class="VWclubsContainer">
                             <div class="VWclubs">
@@ -114,35 +103,29 @@
                                     <img src="../CSS/images/svmadestein.png" alt="SV Madestein 1">
                                     <h2>SV Madestein 1</h2>
                                 </div>
-
                                 <div>
                                     <h3>VS</h3>
                                 </div>
-
                                 <div class="clubDiv">
                                     <img src="../CSS/images/vcs.png" alt="VCS 1">
                                     <h2>VCS 1</h2>
                                 </div>
                             </div>
                         </div>
-
                         <div class="VWbottom">
                             <div class="VWloc">
                                 <img src="../CSS/Icons/Location red.png" alt="Loc">
                                 <p>Leidschenveen <span>(Den Haag)</span> | Vaz Diasdreef 20 2492JL <span>'S-GRAVENHAGE</span></p>
                             </div>
-
                             <div class="VWdatum">
                                 <p>Ma. <span>14:30</span></p>
                                 <p>5 Maart</p>
                             </div>
-
                             <div class="VWuitslagen">
                                 <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -152,10 +135,8 @@
                     <div class="heading">
                         <h1>Wedstrijdschema</h1>
                     </div>
-
                     <div class="contentBox WScontent">
                         <p>Wedstrijdschema van <a href="https://voetbal.nl/" target="_blank">voetbal.nl</a></p>
-
                         <img src="../CSS/images/voetbal_nl.png" alt="">
                     </div>
                 </div>
@@ -167,19 +148,16 @@
                     <div class="heading">
                         <h1>Vacatures</h1>
                     </div>
-
                     <div class="contentBox vacCenter">
                         <div class="vacatureGrid">
                             <div class="vacatureDiv">
                                 <img src="../CSS/images/barmedewerker.jpg" alt="Barmedewerker">
                                 <p>Barmedewerker</p>
                             </div>
-
                             <div class="vacatureDiv">
                                 <img src="../CSS/images/materiaalman.webp" alt="Materiaalman">
                                 <p>Materiaalman</p>
                             </div>
-
                             <div class="vacatureDiv">
                                 <img src="../CSS/images/facilitaireZ.jpg" alt="Facilitaire Zaken">
                                 <p>Facilitaire Zaken</p>
@@ -205,7 +183,6 @@
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
                             </div>
-
                             <div class="nieuwsDiv">
                                 <img src="../CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
@@ -213,7 +190,6 @@
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
                             </div>
-
                             <div class="nieuwsDiv">
                                 <img src="../CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
@@ -221,7 +197,6 @@
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
                             </div>
-
                             <div class="nieuwsDiv">
                                 <img src="../CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
@@ -229,7 +204,6 @@
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
                             </div>
-
                             <div class="nieuwsDiv">
                                 <img src="../CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
@@ -237,7 +211,6 @@
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
                             </div>
-
                             <div class="nieuwsDiv">
                                 <img src="../CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
@@ -246,7 +219,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div>
                             <button class="MNbutton">
                                 Meer Nieuws
@@ -262,7 +234,6 @@
                     <div class="heading">
                         <h1>Samenwerkingen</h1>
                     </div>
-
                     <div class="contentBox samenWidth">
                         <div class="samenDiv">
                             <div>
@@ -282,6 +253,7 @@
                 </div>
             </div>
 
+            <!-- Background -->
             <div>
                 <img src="../CSS/images/blackfade.png" alt="" class="blackFade upsideDown">
                 <div class="bg">
@@ -289,8 +261,7 @@
                     <img src="../CSS/images/bg2.jpeg" alt="">
                     <img src="../CSS/images/bg3.jpg" alt="">
                 </div>
-            </div>
-            
+            </div>  
         </div>
     </main>
 

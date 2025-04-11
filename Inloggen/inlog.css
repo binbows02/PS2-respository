@@ -8,6 +8,9 @@
     background-color: white;
     width: 500px;
     padding: 50px 0px 30px 0px;
+
+    height: 460px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
 .inlogForm h2,
@@ -24,25 +27,40 @@
     font-family: titilium;
 }
 
-.inlogForm input[type=email] {
+.inlogForm input[type=email],
+.inlogForm input[type=password] {
     padding-left: 10px;
 }
 
-.gegevensInv {
-    background-color: red;
-    width: 90%;
+.formTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
 }
 
-.formHeader {
-    background-color: rgba(139, 46, 51, 1);
-    width: 270px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+.formTitle h2 {
+    font-size: 25px;
+}
 
+.formTitle p {
+    font-size: 13px;
+}
+
+.gegevensInv {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
+    background-color: rgba(139, 46, 51, 1);
+    width: 80%;
+    padding: 0px 20px 35px 20px;
+
+    border-radius: 15px;
+}
+
+.gegevensInv p {
+    color: white;
 }
 
 .formHeaderDiv {
@@ -50,8 +68,36 @@
     top: -40px;
 }
 
-.centerForm {
+.infoTextDiv {
     display: flex;
-    justify-content: center;
-    padding-top: 200px;
+
+    margin: 20px 0px 10px 0px;
+}
+
+.infoTextDiv p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.gegevensInv input {
+    width: 97%;
+}
+
+.formButtons {
+    position: absolute;
+    bottom: 20px;
+
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formButtons a {
+    font-size: 13px;
+}
+
+.inlogButton {
+    padding: 15px 40px;
 }

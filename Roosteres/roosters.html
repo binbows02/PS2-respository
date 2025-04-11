@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welkom bij VCS</title>
 
+    <link rel="stylesheet" href="roosters.css">
+
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../overall.css">
     <link rel="stylesheet" href="../header.css">
@@ -13,7 +15,7 @@
 
     <header>
         <div class="headerSpacing">
-            <div class="headerLeft">
+            <nav class="headerLeft">
                 <button class="squareIcon homeIcon" onclick="window.open('../home page/index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
@@ -23,9 +25,9 @@
                     <button onclick="window.open('../Roosteres/roosters.html','_self');">Roosters</button>
                     <button onclick="window.open('../Ons team/ons team.html','_self');">Ons team</button>
                 </div>
-            </div>
+            </nav>
 
-            <div class="headerRight">
+            <nav class="headerRight">
                 <button onclick="window.open('../Over ons/over ons.html','_self')">Over ons</button>
 
                 <div class="langSearchDiv">
@@ -39,22 +41,154 @@
                 </div>
 
                 <button class="wordLidButton" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid</button>
-                <button class="loginIcon" onclick="window.open('../Inloggen/inlog.html','_self')"><img src="../CSS/Icons/Login.png" alt="inloggen"></button>
-            </div>
+                        
+                <!-- zet de class "loggedIn" erbij als de gebruiker ingelogd is -->
+                <div class="gebruikerDiv" onclick="appearGebInst();">
+                    <div>
+                        <!-- zet de class "loggedOut" erbij als de gebruiker uitgelogd is -->
+                        <button class="loginIcon" onclick="loginOpenWindow();">
+                            <img src="../CSS/Icons/Login.png" alt="inloggen">
+                        </button>
+                    </div>
+                    
+                    <div class="gebruikerInfo">
+                        <!-- gegevens (Staat in ../inloggegevens.js) -->
+                    </div>
+                </div>
+
+                <nav class="gebruikerInst">
+                </nav>
+            </nav>
         </div>
         
         <div class="headerMidDiv">
-            <div class="headerMid">
+            <nav class="headerMid">
                 <button onclick="window.open('../home page/index.html','_self')">
                     <img src="../CSS/images/vcs.png" alt="logo">
                 </button>
-            </div>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <h1 style="color: black; font-size: 100px;">roosters</h1>
-        <img src="../CSS/images/placeholder.png" alt="" style="width: 100%;">
+    <main class="tpg">
+
+        <picture class="bannerPicture">
+            <div class="bannerRelative">
+                <img src="../CSS/images/blackfade.png" alt="" class="blackFadeBanner">
+                <div class="bannerImage">
+                    <img src="../CSS/images/Gallerij/595.jpg" alt="">
+                </div>
+            </div>
+        </picture>
+
+        <div class="centerForm">
+            <div class="contentDiv">
+
+                <div class="centerHeader">
+                    <div class="formHeaderPos">
+                        <h1 class="formHeader">Trainingstijden</h1>
+                    </div>
+                </div>
+                    
+                <div class="roosterBox">
+                    <div class="roosterGeslacht">
+                        <button class="selected"><img src="../CSS/Icons/man.png" alt="man"></button>
+                        <button><img src="../CSS/Icons/vrouw.png" alt="vrouw"></button>
+                    </div>
+        
+                    <div class="roosterDatum">
+                        <button><</button>
+                        <p>Dinsdag</p>
+                        <button>></button>
+                    </div>
+        
+                    <div class="roosterData">
+                        <div class="RDinfo">
+                            <div>
+                                <h2>JO8-3</h2>
+                            </div>
+                            
+        
+                            <div class="RDtijd">
+                                <p>17:30 - 18:30</p>
+                                <div class="RDloc">
+                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
+                                    <p>4A</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="RDCoach">Reitze Winklaar</p>
+                        </div>
+                    </div>
+
+                    <div class="roosterData">
+                        <div class="RDinfo">
+                            <div>
+                                <h2>JO8-3</h2>
+                            </div>
+                            
+        
+                            <div class="RDtijd">
+                                <p>17:30 - 18:30</p>
+                                <div class="RDloc">
+                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
+                                    <p>4A</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="RDCoach">Reitze Winklaar</p>
+                        </div>
+                    </div>
+
+                    <div class="roosterData">
+                        <div class="RDinfo">
+                            <div>
+                                <h2>JO8-3</h2>
+                            </div>
+                            
+        
+                            <div class="RDtijd">
+                                <p>17:30 - 18:30</p>
+                                <div class="RDloc">
+                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
+                                    <p>4A</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="RDCoach">Reitze Winklaar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h1 class="formHeader">Wedstrijden</h1>
+                </div>
+
+                <div class="roosterBox">
+                    <div>
+                        <button><</button>
+                        <p>Februari</p>
+                        <button>></button>
+                    </div>
+
+                    <div>
+                        <img src="" alt="Wedstrijd">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <p style="margin-top: 900px;"></p>
+
     </main>
 
     <footer>
@@ -146,6 +280,7 @@
     </footer>
 
     <script src="../footer.js"></script>
+    <script src="../inloggegevens.js"></script>
     
 </body>
 </html>
