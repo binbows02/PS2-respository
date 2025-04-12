@@ -32,14 +32,6 @@
     padding-left: 10px;
 }
 
-.formTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-bottom: 50px;
-}
-
 .formTitle h2 {
     font-size: 25px;
 }
@@ -51,7 +43,7 @@
 .gegevensInv {
     display: flex;
     flex-direction: column;
-    
+
     background-color: rgba(139, 46, 51, 1);
     width: 80%;
     padding: 0px 20px 35px 20px;
@@ -100,4 +92,15 @@
 
 .inlogButton {
     padding: 15px 40px;
+}
+
+form input,
+form textarea {
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: poppins;
 }

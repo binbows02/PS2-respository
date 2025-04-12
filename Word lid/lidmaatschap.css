@@ -1,0 +1,141 @@
+.lidWorden {
+    width: 600px;
+}
+
+.formTitle p {
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.formTitle progress {
+    height: 15px;
+    width: 70%;
+    appearance: none;
+}
+
+/* Gebruikte bronnen: 
+ https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-value
+ https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-bar 
+ */
+
+.formTitle progress::-webkit-progress-bar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border: rgb(231, 231, 231) solid 2px;
+}
+
+.formTitle progress::-webkit-progress-value {
+    background-color: rgba(55, 187, 152, 1);
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------*/
+
+.formBox form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(139, 46, 51, 1);
+    width: 80%;
+
+    margin: 8px 0px;
+}
+
+.formOptions img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.formLogoDiv {
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.formLeft label {
+    font-size: 14px;
+    font-family: poppinsB;
+    letter-spacing: 0px;
+}
+
+.formOptions input[type="radio"] {
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.formOptions input[type="radio"]:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.formOptions input[type="radio"]:checked {
+    background-color: #37bb98;
+    border: 6px solid white;
+    border-radius: 10px;
+}
+
+.formOptions input[type="radio"]:checked:hover {
+    border: 6px solid rgb(224, 224, 224);
+}
+
+.formLeftText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formLeftText .small {
+    font-size: 11px;
+}
+
+.formButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    padding: 50px 0px 0px 0px;
+}
+
+.formButtons a,
+.formButtons p {
+    font-size: 14px;
+}
+
+.formButtons a {
+    color: rgba(139, 46, 51, 1);
+}
+
+.verderButton {
+    font-size: 18px;
+    padding: 10px 45px;
+}

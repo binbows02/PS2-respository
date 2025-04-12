@@ -124,7 +124,12 @@ function logOut() {
     gebInst.classList.remove('visible');
     gebInst.innerHTML = '';
 
-    window.open('../index.html', '_self')
+    // ------------------- Dit deel heb ik gebruik gemaakt van AI -------------------
+    // Zelfde als bovenstaand, maar dan voor uitloggen
+    if (!window.location.pathname.includes('index.html')) {
+        window.open('../index.html', '_self');
+    }
+    // ----------------------------------------------------------------------------
 
     localStorage.setItem('loggedIn', JSON.stringify(loggedIn));
 }

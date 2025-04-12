@@ -41,7 +41,8 @@ h3,
 h4,
 h5,
 li,
-ul {
+ul,
+label {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
@@ -62,7 +63,8 @@ h5,
 li,
 ul,
 ::placeholder,
-a {
+a,
+label {
     font-family: poppins;
     font-size: 16px;
 }
@@ -246,4 +248,43 @@ button {
     object-fit: cover;
 
     opacity: 5%;
+}
+
+.formBox {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.formHeaderPos {
+    z-index: 2;
+    position: absolute;
+
+    top: -25px;
+}
+
+.contentDiv {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.formTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+    width: 100%;
 }

@@ -1,20 +1,3 @@
-.contentDiv {
-    position: relative;
-    margin-bottom: 100px;
-}
-
-.centerHeader {
-    display: flex;
-    justify-content: center;
-}
-
-.formHeaderPos {
-    z-index: 2;
-    position: absolute;
-
-    top: -25px;
-}
-
 .roosterBox,
 .wedstrijdBox {
     position: relative;
