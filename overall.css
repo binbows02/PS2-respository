@@ -14,6 +14,10 @@
     src: url(./CSS/fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: titiliumB;
+    src: url(./CSS/fonts/TitilliumWeb-Bold.ttf);
+}
 
 /* ZET PAGINA ONDER DE HEADER */
 html {
@@ -114,6 +118,10 @@ button {
     margin-top: 60px;
 }
 
+figure {
+    margin: 0;
+}
+
 
 /* CONTENT */
 
@@ -135,8 +143,14 @@ button {
     z-index: 2;
 }
 
-.heading h1 {
-    font-size: 17px;
+.heading h2 {
+    font-family: titilium;
+    font-size: 19px;
+}
+
+.VWheading h2 {
+    font-family: titilium;
+    font-size: 1.3vw;
 }
 
 .contentWidth {
@@ -161,11 +175,11 @@ button {
     align-items: center;
 }
 
-.contentBox h2 {
+.contentBox h3 {
     color: black;
 }
 
-.contentBox h3 {
+.contentBox h4 {
     color: rgb(26, 26, 26);
 }
 
@@ -213,6 +227,8 @@ button {
 /* FORMS */
 
 .formHeader {
+    font-family: titilium;
+
     background-color: rgba(139, 46, 51, 1);
     width: 240px;
     height: 50px;

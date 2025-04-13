@@ -14,8 +14,8 @@
 <body>
 
     <header>
-        <div class="headerSpacing">
-            <nav class="headerLeft">
+        <nav class="headerSpacing">
+            <div class="headerLeft">
                 <button class="squareIcon homeIcon" onclick="window.open('../index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
                 </button>
@@ -25,9 +25,9 @@
                     <button onclick="window.open('../Roosteres/roosters.html','_self');">Roosters</button>
                     <button onclick="window.open('../Ons team/ons team.html','_self');">Ons team</button>
                 </div>
-            </nav>
+            </div>
 
-            <nav class="headerRight">
+            <div class="headerRight">
                 <button onclick="window.open(`https://www.vcs-dh.nl/891/vcs-historie/`,'_self')">Over ons</button>
 
                 <div class="langSearchDiv">
@@ -57,9 +57,10 @@
                 </div>
 
                 <nav class="gebruikerInst">
+                    <!-- Ingelogd menu wanneer je op profiel klikt (Check ../inloggegevens.js   regel 67) -->
                 </nav>
-            </nav>
-        </div>
+            </div>
+        </nav>
         
         <div class="headerMidDiv">
             <nav class="headerMid">
@@ -71,17 +72,17 @@
     </header>
 
     <main class="tpg">
-        <picture class="bannerPicture">
+        <figure class="bannerPicture">
             <div class="bannerRelative">
                 <img src="../CSS/images/blackfade.png" alt="" class="blackFadeBanner">
                 <div class="bannerImage">
                     <img src="../CSS/images/Gallerij/287.jpg" alt="">
                 </div>
             </div>
-        </picture>
+        </figure>
 
         <div class="centerForm">
-            <div class="contentDiv">
+            <section class="contentDiv">
 
                 <div class="centerHeader">
                     <div class="formHeaderPos">
@@ -95,7 +96,7 @@
                         <progress value="25" max="100"></progress>
                     </div>
 
-                    <form action="">   
+                    <form>   
                         <div class="formOptions">
                             <div class="formLeft">
                                 <div>
@@ -164,7 +165,7 @@
                     </form>
                 </div>
         
-            </div>
+            </section>
         </div>
 
     </main>
@@ -177,7 +178,7 @@
         <!--  -->
 
         <div class="footerContainer">
-            <form action="" class="footerLeft">
+            <form class="footerLeft">
                 <h1>Vragen? Stel ze gerust!</h1>
 
                 <div>

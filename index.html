@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <div class="headerSpacing">
-            <nav class="headerLeft">
+        <nav class="headerSpacing">
+            <div class="headerLeft"> 
                 <button class="squareIcon homeIcon" onclick="window.open('index.html','_self')">
                     <img src="CSS/Icons/Home.png" alt="Home">
                 </button>
@@ -24,8 +24,9 @@
                     <button onclick="window.open('Roosteres/roosters.html','_self');">Roosters</button>
                     <button onclick="window.open('Ons team/ons team.html','_self');">Ons team</button>
                 </div>
-            </nav>
-            <nav class="headerRight">
+            </div>
+
+            <div class="headerRight">
                 <button onclick="window.open(`https://www.vcs-dh.nl/891/vcs-historie/`,'_self')">Over ons</button>
                 <div class="langSearchDiv">
                     <button class="squareIcon langSearch">
@@ -48,11 +49,13 @@
                         <!-- gegevens (Staat in ../inloggegevens.js     regel 39) -->
                     </div>
                 </div>
+
                 <nav class="gebruikerInst">
                     <!-- Ingelogd menu wanneer je op profiel klikt (Check ../inloggegevens.js   regel 67) -->
                 </nav>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        
         <div class="headerMidDiv">
             <nav class="headerMid">
                 <button onclick="window.open('index.html','_self')">
@@ -63,7 +66,7 @@
     </header>
 
     <main>
-        <!-- Top pagina -->
+        <!-- Hero -->
         <div class="topPagina">
             <div class="TPTitel">
                 <h1>Iedereen, jong en oud, welkom bij VCS Den Haag!</h1>
@@ -76,41 +79,41 @@
             <div class="TPGallerij">
                 <button>Gallerij <img src="CSS/Icons/Image.png" alt=""></button>
             </div>
-            <picture>
+            <!-- figure semantische waarde -->
+            <figure>
                 <img src="CSS/images/blackfade.png" alt="" class="blackFade">
                 <div class="switchBG">
                     <img src="CSS/images/Gallerij/284.jpg" alt="">
                 </div>
-            </picture>
+            </figure>
         </div>
 
         <!-------------------------- Content ------------------------>
-
-        <div class="CCdiv">
+        <section class="CCdiv">
             
             <!-- Volgende wedstrijd -->
-            <div class="contentContainer VolWed">
+            <section class="contentContainer VolWed">
                 <div class="contentWidth VWwidth">
                     <div class="VWcenter">
                         <div class="VWheading">
-                            <h1>Volgende wedstrijd</h1>
+                            <h2>Volgende wedstrijd</h2>
                         </div>
                     </div>
-                    <div class="contentBox">
+                    <article class="contentBox">
                         <div class="VWclubsContainer">
-                            <div class="VWclubs">
+                            <article class="VWclubs">
                                 <div class="clubDiv">
                                     <img src="CSS/images/svmadestein.png" alt="SV Madestein 1">
-                                    <h2>SV Madestein 1</h2>
+                                    <h3>SV Madestein 1</h3>
                                 </div>
                                 <div>
-                                    <h3>VS</h3>
+                                    <h4>VS</h4>
                                 </div>
                                 <div class="clubDiv">
                                     <img src="CSS/images/vcs.png" alt="VCS 1">
-                                    <h2>VCS 1</h2>
+                                    <h3>VCS 1</h3>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                         <div class="VWbottom">
                             <div class="VWloc">
@@ -125,115 +128,116 @@
                                 <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
 
             <!-- Wedstrijdschema -->
-            <div class="contentContainer">
+            <section class="contentContainer">
                 <div class="contentWidth wedWith">
                     <div class="heading">
-                        <h1>Wedstrijdschema</h1>
+                        <h2>Wedstrijdschema</h2>
                     </div>
                     <div class="contentBox WScontent">
                         <p>Wedstrijdschema van <a href="https://voetbal.nl/" target="_blank">voetbal.nl</a></p>
                         <img src="CSS/images/voetbal_nl.png" alt="">
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Vacatures -->
-            <div class="contentContainer">
+            <section class="contentContainer">
                 <div class="contentWidth vacWidth">
                     <div class="heading">
-                        <h1>Vacatures</h1>
+                        <h2>Vacatures</h2>
                     </div>
-                    <div class="contentBox vacCenter">
+                    <article class="contentBox vacCenter">
                         <div class="vacatureGrid">
-                            <div class="vacatureDiv">
+                            <article class="vacatureDiv">
                                 <img src="CSS/images/barmedewerker.jpg" alt="Barmedewerker">
                                 <p>Barmedewerker</p>
-                            </div>
-                            <div class="vacatureDiv">
+                            </article>
+                            <article class="vacatureDiv">
                                 <img src="CSS/images/materiaalman.webp" alt="Materiaalman">
                                 <p>Materiaalman</p>
-                            </div>
-                            <div class="vacatureDiv">
+                            </article>
+                            <article class="vacatureDiv">
                                 <img src="CSS/images/facilitaireZ.jpg" alt="Facilitaire Zaken">
                                 <p>Facilitaire Zaken</p>
-                            </div>
+                            </article>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
 
             <!-- Nieuws -->
-            <div class="contentContainer">
+            <section class="contentContainer">
                 <div class="contentWidth">
                     <div class="heading">
-                        <h1>Nieuws</h1>
+                        <h2>Nieuws</h2>
                     </div>
 
-                    <div class="contentBox nieWidth">
+                    <article class="contentBox nieWidth">
                         <div class="nieuwsGrid">
-                            <div class="nieuwsDiv">
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
-                            <div class="nieuwsDiv">
+                            </article>
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
-                            <div class="nieuwsDiv">
+                            </article>
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
-                            <div class="nieuwsDiv">
+                            </article>
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
-                            <div class="nieuwsDiv">
+                            </article>
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
-                            <div class="nieuwsDiv">
+                            </article>
+                            <article class="nieuwsDiv">
                                 <img src="CSS/images/nieuws.jpg" alt="Nieuws">
                                 <div class="nieuwsText">
                                     <h1>Doordeweeks pinnen op VCS!</h1>
                                     <p>Vanaf aankomend seizoen gaan we van maandag t/m ...</p>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                         <div>
                             <button class="MNbutton">
                                 Meer Nieuws
                             </button>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
 
             <!-- Samenwerkingen -->
-            <div class="contentContainer samenContainer">
+            <section class="contentContainer samenContainer">
                 <div class="contentWidth">
                     <div class="heading">
-                        <h1>Samenwerkingen</h1>
+                        <h2>Samenwerkingen</h2>
                     </div>
+
                     <div class="contentBox samenWidth">
                         <div class="samenDiv">
                             <div>
@@ -251,18 +255,19 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             <!-- Background -->
             <div>
                 <img src="CSS/images/blackfade.png" alt="" class="blackFade upsideDown">
+
                 <div class="bg">
                     <img src="CSS/images/bg1.jpg" alt="">
                     <img src="CSS/images/bg2.jpeg" alt="">
                     <img src="CSS/images/bg3.jpg" alt="">
                 </div>
-            </div>  
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer>
