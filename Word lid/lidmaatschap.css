@@ -77,10 +77,55 @@
     gap: 15px;
 }
 
+.formGegevens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(139, 46, 51, 1);
+    width: 80%;
+
+    margin: 8px 0px;
+}
+
+.formGegevens label {
+    font-size: 14px;
+}
+
+
 .formLeft label {
     font-size: 14px;
     font-family: poppinsB;
     letter-spacing: 0px;
+}
+
+.formOptions input {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.formOptions input:focus::placeholder,
+.formOptions textarea:focus::placeholder {
+    color: transparent;
+}
+
+.formOptions input::placeholder {
+    font-size: 14px;
+}
+
+.formOptions input[type="text"],
+.formOptions input[type="email"],
+.formOptions input[type="tel"] {
+    padding-left: 10px;
+    font-size: 14px;
 }
 
 .formOptions input[type="radio"] {
@@ -137,5 +182,70 @@
 
 .verderButton {
     font-size: 18px;
-    padding: 10px 45px;
+    padding: 15px 45px;
+}
+
+.gevInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px 0px;
+}
+
+.gevPersoonlijk {
+    display: flex;
+    gap: 15px;
+}
+
+.tussenvoegInput {
+    width: 85px;
+}
+
+.otherInput {
+    width: 164px;
+}
+
+.gevGeslacht {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 70px 0px;
+
+    width: 100%;
+}
+
+.gevGeslacht div {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.gevAdres {
+    display: flex;
+    justify-content: start;
+}
+
+.gevAdres input {
+    width: 50%;
+}
+
+.gevLocatie,
+.gevLocatie2 {
+    display: flex;
+    gap: 15px;
+}
+
+.gevLocatie2 {
+    width: 100%;
+}
+
+.gevLocatie input {
+    width: 95%;
+}
+
+.gevPers {
+    width: 100%;
+    margin-top: 70px;
 }
