@@ -25,6 +25,14 @@ header button:hover {
     border-bottom: 3px solid white;
 }
 
+.headerHamburger {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
 header .squareIcon:hover,
 .headerMid button:hover {
     background-color: transparent;
@@ -218,4 +226,114 @@ header img {
 
 .gebruikerInst ul:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+
+    header {
+        width: 100vw;
+        height: 20vh;
+    }
+
+
+    .headerHamburger {
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .headerHamburger img {
+        width: 4vh;
+        object-fit: contain;
+    }
+
+    .hamburgerMenu {
+        z-index: 5;
+        position: absolute;
+
+        height: 101vh;
+        width: 50vw;
+        background-color: rgba(139, 46, 51, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .hamburgerClosed {
+        display: none;
+    }
+
+    .headerSpacing {
+        height: 7.5vh;
+    }
+
+    .headerLeft {
+        display: none;
+    }
+
+    .headerRight {
+        display: none;
+    }
+
+    .headerMid img {
+        margin-top: 10px;
+        width: 90px;
+    }
+
+    #vacatures,
+    #samenwerkingen,
+    #background,
+    #wedstrijdschema {
+        display: none;
+    }
+
+    .hamburgerOptions {
+        width: 100%;
+    }
+
+    .hamburgerPages {
+        margin-top: 5vh;
+    }
+
+    .hamburgerPages button {
+        margin: 0px;
+        padding: 2.5vh 0px 2.5vh 5vw;
+        width: 100%;
+
+        display: flex;
+        justify-content: start;
+    }
+
+    .hamburgerTop {
+        width: 95%;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburgerTop .left {
+        display: flex;
+    }
+
+    .langSearch img {
+        width: 4vh;
+        object-fit: contain;
+    }
+
+    .hamburgerWL {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 5vh;
+    }
+
+    .wordLidButton {
+        width: 90%;
+    }
+
+    .squareIcon {
+        padding: 0;
+    }
 }

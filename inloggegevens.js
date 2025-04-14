@@ -128,6 +128,8 @@ function logOut() {
     // Zelfde als bovenstaand, maar dan voor uitloggen
     if (!window.location.pathname.includes('index.html')) {
         window.open('../index.html', '_self');
+    } else {
+        window.open('index.html', '_self');
     }
     // ----------------------------------------------------------------------------
 

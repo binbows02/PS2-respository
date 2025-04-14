@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../CSS/images/vcs.png">
-    <title>Welkom bij VCS</title>
+    <link rel="icon" href="CSS/images/vcs.png">
+    <title>Welkom bij VCS Den Haag!</title>
     <link rel="stylesheet" href="home page/home.css">
 
     <!-- Standaard voor elke pagina, zodat ik voor elke aparte css geen zelfde css code hoef te kopieren en te plakken. -->
@@ -15,6 +15,48 @@
 <body>
     <header>
         <nav class="headerSpacing">
+            <!-- Mobiele elementen -->
+            <div class="headerHamburger">
+                <button class="squareIcon" onclick="openHamburger()">
+                    <img src="CSS/Icons/hamburger.png" alt="hamburger">
+                </button>
+            </div>
+
+            <!-- Zet hamburgerClosed erbij als het dicht is-->
+            <div class="hamburgerMenu hamburgerClosed hamburgerJS">
+                <div class="hamburgerTop">
+                    <div class="left">
+                        <button class="loginIcon" onclick="loginOpenWindow();">
+                            <img src="CSS/Icons/Login.png" alt="inloggen">
+                        </button>
+        
+                        <button class="squareIcon langSearch">
+                            <img src="CSS/Icons/Lang.png" alt="lang">
+                        </button>
+                    </div>
+        
+                    <div>
+                        <button class="squareIcon" onclick="openHamburger()">
+                            <img src="CSS/Icons/close.png" alt="close">
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="hamburgerOptions">
+                    <div class="hamburgerPages">
+                        <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
+                        <button onclick="window.open('Roosteres/roosters.html','_self');">Roosters</button>
+                        <button onclick="window.open('Ons team/ons team.html','_self');">Ons team</button>
+                        <button onclick="window.open('https://www.vcs-dh.nl/891/vcs-historie/','_self')">Over ons</button>
+                    </div>
+                    
+                    <div class="hamburgerWL">
+                        <button class="wordLidButton" onclick="window.open('Word lid/lidmaatschap.html','_self')">Word lid</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------- -->
+            
             <div class="headerLeft"> 
                 <button class="squareIcon homeIcon" onclick="window.open('index.html','_self')">
                     <img src="CSS/Icons/Home.png" alt="Home">
@@ -74,7 +116,7 @@
             </div>
             <div class="TPKnoppen">
                 <button class="lidmaatschapKnop" onclick="window.open('Word lid/lidmaatschap.html','_self')">Word lid bij ons!</button>
-                <a href="Proeftrainingen/proeftrainingen.html">Proeftrainingen</a>
+                <a href="Proeftrainingen/proeftrainingen.html" id="proeftrainingen">Proeftrainingen</a>
             </div>
             <div class="TPGallerij">
                 <button>Gallerij <img src="CSS/Icons/Image.png" alt=""></button>
@@ -133,7 +175,7 @@
             </section>
 
             <!-- Wedstrijdschema -->
-            <section class="contentContainer">
+            <section class="contentContainer" id="wedstrijdschema">
                 <div class="contentWidth wedWith">
                     <div class="heading">
                         <h2>Wedstrijdschema</h2>
@@ -146,8 +188,8 @@
             </section>
 
             <!-- Vacatures -->
-            <section class="contentContainer">
-                <div class="contentWidth vacWidth">
+            <section class="contentContainer vacatures">
+                <div class="contentWidth" id="vacatures">
                     <div class="heading">
                         <h2>Vacatures</h2>
                     </div>
@@ -171,7 +213,7 @@
             </section>
 
             <!-- Nieuws -->
-            <section class="contentContainer">
+            <section class="contentContainer" id="nieuws">
                 <div class="contentWidth">
                     <div class="heading">
                         <h2>Nieuws</h2>
@@ -232,7 +274,7 @@
             </section>
 
             <!-- Samenwerkingen -->
-            <section class="contentContainer samenContainer">
+            <section class="contentContainer samenContainer" id="samenwerkingen">
                 <div class="contentWidth">
                     <div class="heading">
                         <h2>Samenwerkingen</h2>
@@ -258,7 +300,7 @@
             </section>
 
             <!-- Background -->
-            <div>
+            <section id="background">
                 <img src="CSS/images/blackfade.png" alt="" class="blackFade upsideDown">
 
                 <div class="bg">
@@ -266,7 +308,7 @@
                     <img src="CSS/images/bg2.jpeg" alt="">
                     <img src="CSS/images/bg3.jpg" alt="">
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 
@@ -360,6 +402,7 @@
 
 
     <script src="home page/home.js"></script>
+    <script src="hamburger.js"></script>
 
     <!-- Standaard javascript voor alle pagina's, zodat ik de code niet heletijd hoef te plakken -->
     <script src="footer.js"></script>
