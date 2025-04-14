@@ -438,6 +438,12 @@ figure img {
     font-size: 15px;
 }
 
+.nieuwsText h3 {
+    font-family: titilium;
+    font-size: 20px;
+    color: white;
+}
+
 .nieuwsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -483,7 +489,7 @@ figure img {
     padding: 30px;
 }
 
-.samenDiv div {
+.samenDiv article {
     display: flex;
     justify-content: center;
 }
@@ -823,7 +829,7 @@ figure img {
         bottom: 0;
     }
 
-    .nieuwsText h1 {
+    .nieuwsText h3 {
         font-size: 4vw;
     }
 

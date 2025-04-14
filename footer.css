@@ -25,7 +25,9 @@ nav a {
     letter-spacing: 0px;
 }
 
-footer h1 {
+footer h2 {
+    font-family: titilium;
+    font-size: 20px;
     margin: 0px 0px 40px 0px
 }
 
@@ -110,7 +112,7 @@ textarea::placeholder {
 
 /* FOOTER MIDDEN */
 
-.footerMid h1 {
+.footerMid h2 {
     display: flex;
     justify-content: center;
 }

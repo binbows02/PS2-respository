@@ -72,14 +72,14 @@
     </header>
 
     <main class="tpg">
-        <picture class="bannerPicture">
+        <figure class="bannerPicture">
             <div class="bannerRelative">
                 <img src="../CSS/images/blackfade.png" alt="" class="blackFadeBanner">
                 <div class="bannerImage">
                     <img src="../CSS/images/Gallerij/287.jpg" alt="">
                 </div>
             </div>
-        </picture>
+        </figure>
 
         <div class="centerForm">
             <section class="contentDiv">
@@ -90,15 +90,15 @@
                     </div>
                 </div>
                 
-                <section class="formBox lidWorden">
+                <div class="formBox lidWorden">
                     <div class="formTitle">
                         <p>Vul je gegevens in</p>
                         <progress value="50" max="100"></progress>
                     </div>
 
                     <div class="formOptions formGegevens">
-                        <form action="">
-                            <div class="gevPersoonlijk">
+                        <form>
+                            <section class="gevPersoonlijk">
                                 <div class="gevInput">
                                     <label for="voornaam">Voornaam</label>
                                     <input type="text" id="voornaam" placeholder="Voornaam" class="otherInput" required>
@@ -113,14 +113,14 @@
                                     <label for="achternaam">Achternaam</label>
                                     <input type="text" id="achternaam" placeholder="Achternaam" class="otherInput">
                                 </div>
-                            </div>
+                            </section>
                             
-                            <div class="gevInput">
+                            <section class="gevInput">
                                 <label for="geboortedatum">Geboortedatum</label>
-                                <input type="date" id="geboortedatum" placeholder="Geboortedatum">
-                            </div>
+                                <input type="date" id="geboortedatum">
+                            </section>
 
-                            <div class="gevGeslacht">
+                            <section class="gevGeslacht">
                                 <div>
                                     <input type="radio" name="geslacht" id="man">
                                     <label for="man">Man</label>
@@ -135,14 +135,14 @@
                                     <input type="radio" name="geslacht" id="anders">
                                     <label for="anders">Anders</label>
                                 </div>
-                            </div>
+                            </section>
 
-                            <div class="gevInput gevAdres">
+                            <section class="gevInput gevAdres">
                                 <label for="adres">Adres</label>
                                 <input type="text" id="adres" placeholder="Adres">
-                            </div>
+                            </section>
 
-                            <div class="gevLocatie">
+                            <section class="gevLocatie">
                                 <div class="gevInput">
                                     <label for="postcode">Postcode</label>
                                     <input type="text" id="postcode" placeholder="0000 AA">
@@ -157,9 +157,9 @@
                                     <label for="toevoeging">Toevoeging</label>
                                     <input type="text" id="toevoeging" placeholder="Toevoeging">
                                 </div>
-                            </div>
+                            </section>
 
-                            <div class="gevLocatie2">
+                            <section class="gevLocatie2">
                                 <div class="gevInput">
                                     <label for="straatnaam">Straatnaam</label>
                                     <input type="text" id="straatnaam" placeholder="Straatnaam">
@@ -169,9 +169,9 @@
                                     <label for="woonplaats">Woonplaats</label>
                                     <input type="text" id="woonplaats" placeholder="Woonplaats">
                                 </div>
-                            </div>
+                            </section>
 
-                            <div class="gevPers">
+                            <section class="gevPers">
                                 <div class="gevInput">
                                     <label for="emailadres">Emailadres</label>
                                     <input type="email" id="emailadres" placeholder="Emailadres">
@@ -181,7 +181,7 @@
                                     <label for="telefoonnummer">Telefoonnummer</label>
                                     <input type="tel" id="telefoonnummer" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="06-1234-5678">
                                 </div>
-                            </div>
+                            </section>
                         </form>
                     </div>
                     
@@ -190,7 +190,7 @@
                         <button class="greenButton verderButton" type="button" onclick="window.open('lid extra activiteiten.html','_self')">Verder</button>
                     </div>
 
-                </section>
+                </div>
         
             </section>
         </div>
@@ -204,8 +204,8 @@
         <!--  -->
 
         <div class="footerContainer">
-            <form action="" class="footerLeft">
-                <h1>Vragen? Stel ze gerust!</h1>
+            <form class="footerLeft">
+                <h2>Vragen? Stel ze gerust!</h2>
 
                 <div>
                     <img src="../CSS/Icons/naam.png" alt="naamIcon" class="placeholderIcon">
@@ -231,7 +231,7 @@
             </form>
     
             <div class="footerMid">
-                <h1>Of neem contact met ons op!</h1>
+                <h2>Of neem contact met ons op!</h2>
 
                 <div class="midContainer">
                     <img src="../CSS/Icons/Location.png" alt="pinpointLoc">
@@ -260,7 +260,7 @@
             </div>
     
             <div class="footerRight">
-                <h1>Volg ons!</h1>
+                <h2>Volg ons!</h2>
 
                 <div class="footerRightSpacing">
                     <div>
