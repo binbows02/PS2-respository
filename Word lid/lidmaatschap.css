@@ -138,17 +138,20 @@
     cursor: pointer;
 }
 
-.formOptions input[type="radio"]:hover {
+.formOptions input[type="radio"]:hover,
+.otherOptions input[type="checkbox"]:hover {
     background-color: rgb(224, 224, 224);
 }
 
-.formOptions input[type="radio"]:checked {
+.formOptions input[type="radio"]:checked,
+.otherOptions input[type="checkbox"]:checked {
     background-color: #37bb98;
     border: 6px solid white;
     border-radius: 10px;
 }
 
-.formOptions input[type="radio"]:checked:hover {
+.formOptions input[type="radio"]:checked:hover,
+.otherOptions input[type="checkbox"]:checked:hover {
     border: 6px solid rgb(224, 224, 224);
 }
 
@@ -248,4 +251,146 @@
 .gevPers {
     width: 100%;
     margin-top: 70px;
+}
+
+/* Extra club activiteit */
+
+.formECA {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 15px;
+}
+
+.formECA p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.ECAoptions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ECAoptions input {
+    width: 10px;
+    height: 10px;
+}
+
+.ECAoptions label {
+    font-size: 13px;
+}
+
+.lidWorden h3 {
+    display: flex;
+    justify-content: left;
+    width: 85%;
+
+    font-family: titiliumB;
+    letter-spacing: 0px;
+    font-size: 25px;
+    margin: 15px 0px;
+    
+    color: black;
+}
+
+/* OPMERKINGEN */
+
+.otherOptions {
+    margin-top: 20px;
+
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.otherOptions div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin: 5px 0px;
+}
+
+.otherOptions a, .otherOptions label {
+    font-family: arial;
+    letter-spacing: 0.25px;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+}   
+
+.otherOptions input {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.otherOptions p {
+    font-size: 14px;
+}
+
+.formOptions p span {
+    font-family: poppinsB;
+}
+
+.formOptions p,
+.formOpmerking label {
+    font-size: 15px;
+    color: white;
+}
+
+.formOpmerking label {
+    font-family: poppinsB;
+    font-weight: normal;
+    letter-spacing: 0px;
+    margin: 10px 0px;
+}
+
+.formOpmerking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formOpmerkingen {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.formOpmerking textarea {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.captcha img {
+    margin: 20px 0px;
+    width: 300px;
+}
+
+/* GELUKT */
+
+.formGelukt {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    margin: 0px 0px 40px 0px;
+}
+
+.formGelukt p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media screen (max-width: 500px) {
+    
 }

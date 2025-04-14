@@ -81,58 +81,53 @@
         </picture>
 
         <div class="centerForm">
-            <section class="contentDiv">
+            <div class="contentDiv">
 
                 <div class="centerHeader">
                     <div class="formHeaderPos">
-                        <h2 class="formHeader">Extra club activiteiten</h2>
+                        <h1 class="formHeader">Opmerkingen</h1>
                     </div>
                 </div>
                 
                 <div class="formBox lidWorden">
                     <div class="formTitle">
                         <p>Word lid van onze club!</p>
-                        <progress value="75" max="100"></progress>
+                        <progress value="95" max="100"></progress>
                     </div>
 
-                    <div class="formOptions formECA">
-                        <p>Wij hebben extra activiteiten op de club, hier kan je je optioneel alvast inschrijven</p>
-                    
-                        <div class="ECAoptions">
-                            <input type="radio" name="extraClub" id="kader">
-                            <label for="kader">Kader - Week/Vrijwilleger</label>
-                        </div>
-
-                        <div class="ECAoptions">
-                            <input type="radio" name="extraClub" id="senioren">
-                            <label for="senioren">Senioren 35+ - Week/Recreatief voetbal</label>
+                    <div class="formOptions formOpmerkingen">
+                        <p>Heb je <span>voorkeuren</span> voor de voetbalvorm waar je in wil spelen, het team waar je graag in zou willen spelen of iets anders dat je aan de ledenadministratie van VCS wilt meegeven? </p>
+                        
+                        <div class="formOpmerking">
+                            <label for="">Geef dat hier dan even aan.</label>
+                            <textarea name="opmerkingen" placeholder="Opmerkingen"></textarea>
                         </div>
                     </div>
 
-                    <h3>Voormalige lid</h3>
-
-                    <div class="formOptions formECA">
-                        <p>Ben je al eerder lid geweest of ben je nog lid van een vereniging die aangesloten is bij de KNVB?</p>
-                    
-                        <div class="ECAoptions">
-                            <input type="radio" name="lidGeweest" id="ja">
-                            <label for="ja">Ja</label>
+                    <div class="otherOptions">
+                        <div>
+                            <input type="checkbox">
+                            <label>Ik ga akkoord met de <a href="">verenigingsregels</a> en de <a href="">Privacy Statement</a>.</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox">
+                            <label>Ik of mijn kind maakt gebruik van een <a href="">ooievaarspas</a>.</label>
                         </div>
 
-                        <div class="ECAoptions">
-                            <input type="radio" name="lidGeweest" id="nee">
-                            <label for="nee">Nee</label>
+                        <div class="captcha">
+                            <img src="../CSS/images/captcha.png" alt="im not a robot">
                         </div>
                     </div>
 
                     <div class="formButtons">
-                        <a href="lid gegevens.html" class="returnPage">Terug</a>
-                        <button class="greenButton verderButton" type="button" onclick="window.open('opmerkingen.html','_self')">Overslaan</button>
+                        <a href="lid extra activiteiten.html" class="returnPage">Terug</a>
+                        <button class="greenButton verderButton" type="button" onclick="window.open('gelukt.html','_self')">Verzenden</button>
                     </div>
-
+                    
                 </div>
         
-            </section>
+            </div>
         </div>
     </main>
 
