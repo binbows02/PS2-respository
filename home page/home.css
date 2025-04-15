@@ -841,6 +841,8 @@ figure img {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 25px;
+
+        padding: 20px 0px 120px 0px;
     }
 
     .nieWidth {

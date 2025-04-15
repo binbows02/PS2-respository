@@ -338,4 +338,26 @@ header img {
     .squareIcon {
         padding: 0;
     }
+
+    .hamburgerOpenedJS {
+        display: block;
+    }
+
+    .opacityDark {
+        position: fixed;
+        z-index: 5;
+
+        background-color: black;
+        opacity: 50%;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bannerPicture {
+        position: absolute;
+
+        top: 0px;
+        z-index: -2;
+    }
 }

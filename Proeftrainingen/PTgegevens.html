@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Op onze website vind je allerlei informatie over onze mooie club. Van actuele zaken over wedstrijden en trainingen tot achtergrondinformatie.">
     <link rel="icon" href="../CSS/images/vcs.png">
-    <title>Kom proeftrainen bij ons! - VCS</title>
+    <title>Word lid bij ons! - VCS</title>
+
     <link rel="stylesheet" href="../Word lid/lidmaatschap.css">
-    <link rel="stylesheet" href="../Roosteres/roosters.css">
-    <link rel="stylesheet" href="proeftrainingen.css">
 
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../overall.css">
@@ -85,75 +84,115 @@
 
         <div class="centerForm">
             <section class="contentDiv">
+
                 <div class="centerHeader">
                     <div class="formHeaderPos">
-                        <h2 class="formHeader">Proeftraining</h2>
+                        <h2 class="formHeader">Gegevens</h2>
                     </div>
                 </div>
-
+                
                 <div class="formBox lidWorden">
                     <div class="formTitle">
-                        <p>Proef onze sfeer!</p>
-                        <progress value="50" max="100"></progress>
+                        <p>Vul je gegevens in</p>
+                        <progress value="90" max="100"></progress>
                     </div>
 
-                    <div>
-                        <h3>Datum</h3>
-                    </div>
-
-                    <div class="roosterDatum">
-                        <button>&#10094;</button>
-                        <p>Maart</p>
-                        <button>&#10095;</button>
-                    </div>
-
-                    <!-- zet PTgeselecteerd wanneer er geselcteerd is -->
-                    <article class="roosterData c1" onclick="selecteerPT()">
-                        <div class="RDinfo">
-                            <div>
-                                <h2>JO8-3</h2>
-                            </div>
-        
-                            <div class="RDtijd">
-                                <p>17:30 - 18:30</p>
-                                <div class="RDloc">
-                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
-                                    <p>4A</p>
+                    <div class="formOptions formGegevens">
+                        <form>
+                            <section class="gevPersoonlijk">
+                                <div class="gevInput">
+                                    <label for="voornaam">Voornaam</label>
+                                    <input type="text" id="voornaam" placeholder="Voornaam" class="otherInput" required>
                                 </div>
-                            </div>
-                        </div>
-        
-                        <div>
-                            <p class="PTdata">7 Maart</p>
-                        </div>
-                    </article>
-
-                    <article class="roosterData PTvolgendeMaand">
-                        <div class="RDinfo">
-                            <div>
-                                <h2>JO8-3</h2>
-                            </div>
-        
-                            <div class="RDtijd">
-                                <p>17:30 - 18:30</p>
-                                <div class="RDloc">
-                                    <img src="../CSS/Icons/locatieZwart.png" alt="location BLACk">
-                                    <p>4A</p>
+    
+                                <div class="gevInput">
+                                    <label for="tussenvoegsel">Tussenvoeg.</label>
+                                    <input type="text" id="tussenvoegsel" placeholder="Tussen..." class="tussenvoegInput">
                                 </div>
-                            </div>
-                        </div>
-        
-                        <div>
-                            <p class="PTdata">7 April</p>
-                        </div>
-                    </article>
-                
-                    <div class="formButtons verderRight">
-                        <button class="greenButton verderButton" type="button" onclick="window.open('PTgegevens.html','_self')">Verder</button>
+    
+                                <div class="gevInput">
+                                    <label for="achternaam">Achternaam</label>
+                                    <input type="text" id="achternaam" placeholder="Achternaam" class="otherInput">
+                                </div>
+                            </section>
+                            
+                            <section class="gevInput">
+                                <label for="geboortedatum">Geboortedatum</label>
+                                <input type="date" id="geboortedatum">
+                            </section>
+
+                            <section class="gevGeslacht">
+                                <div>
+                                    <input type="radio" name="geslacht" id="man">
+                                    <label for="man">Man</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="geslacht" id="vrouw">
+                                    <label for="vrouw">Vrouw</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="geslacht" id="anders">
+                                    <label for="anders">Anders</label>
+                                </div>
+                            </section>
+
+                            <section class="gevInput gevAdres">
+                                <label for="adres">Adres</label>
+                                <input type="text" id="adres" placeholder="Adres">
+                            </section>
+
+                            <section class="gevLocatie">
+                                <div class="gevInput">
+                                    <label for="postcode">Postcode</label>
+                                    <input type="text" id="postcode" placeholder="0000 AA">
+                                </div>
+
+                                <div class="gevInput">
+                                    <label for="huisnummer">Huisnummer</label>
+                                    <input type="text" id="huisnummer" placeholder="Huisnummer">
+                                </div>
+
+                                <div class="gevInput">
+                                    <label for="toevoeging">Toevoeging</label>
+                                    <input type="text" id="toevoeging" placeholder="Toevoeging">
+                                </div>
+                            </section>
+
+                            <section class="gevLocatie2">
+                                <div class="gevInput">
+                                    <label for="straatnaam">Straatnaam</label>
+                                    <input type="text" id="straatnaam" placeholder="Straatnaam">
+                                </div>
+
+                                <div class="gevInput">
+                                    <label for="woonplaats">Woonplaats</label>
+                                    <input type="text" id="woonplaats" placeholder="Woonplaats">
+                                </div>
+                            </section>
+
+                            <section class="gevPers">
+                                <div class="gevInput">
+                                    <label for="emailadres">Emailadres</label>
+                                    <input type="email" id="emailadres" placeholder="Emailadres">
+                                </div>
+    
+                                <div class="gevInput">
+                                    <label for="telefoonnummer">Telefoonnummer</label>
+                                    <input type="tel" id="telefoonnummer" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="06-1234-5678">
+                                </div>
+                            </section>
+                        </form>
                     </div>
+                    
+                    <div class="formButtons">
+                        <a href="proeftrainingen.html" class="returnPage">Terug</a>
+                        <button class="greenButton verderButton" type="button" onclick="window.open('PTgelukt.html','_self')">Verder</button>
+                    </div>
+
                 </div>
-                
-
+        
             </section>
         </div>
     </main>
@@ -247,7 +286,7 @@
     </footer>
 
     <script src="../footer.js"></script>
-    <script src="proeftrainingen.js"></script>
+    <script src="../inloggegevens.js"></script>
     
 </body>
 </html>

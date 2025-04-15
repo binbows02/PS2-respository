@@ -1,0 +1,29 @@
+.PTdata {
+    font-family: titiliumB;
+}
+
+.PTvolgendeMaand {
+    opacity: 50%;
+}
+
+.verderRight {
+    display: flex;
+    justify-content: right;
+}
+
+.PTgeselecteerd {
+    background-color: rgba(75, 195, 140, 1);
+}
+
+.PTgeselecteerd p,
+.PTgeselecteerd h2 {
+    color: white;
+}
+
+.PTgeselecteerd img {
+    filter: invert();
+}
+
+.roosterData:hover {
+    cursor: pointer;
+}
