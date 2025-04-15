@@ -13,7 +13,7 @@
     appearance: none;
 }
 
-/* Gebruikte bronnen: 
+/* Gebruikte webkit progress bar bronnen: 
  https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-value
  https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-bar 
  */
@@ -292,7 +292,7 @@
     letter-spacing: 0px;
     font-size: 25px;
     margin: 15px 0px;
-    
+
     color: black;
 }
 
@@ -315,13 +315,14 @@
     margin: 5px 0px;
 }
 
-.otherOptions a, .otherOptions label {
+.otherOptions a,
+.otherOptions label {
     font-family: arial;
     letter-spacing: 0.25px;
     color: black;
     font-size: 14px;
     font-weight: normal;
-}   
+}
 
 .otherOptions input {
     appearance: none;
@@ -391,6 +392,4 @@
     margin-bottom: 20px;
 }
 
-@media screen (max-width: 500px) {
-    
-}
+@media screen (max-width: 500px) {}

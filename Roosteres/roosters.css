@@ -161,3 +161,13 @@
 .ingeroosterd img {
     filter: invert();
 }
+
+@media screen and (max-width: 900px) {
+
+    .roosterBox,
+    .wedstrijdBox {
+        width: 95vw;
+    }
+
+    .
+}

@@ -228,11 +228,13 @@ header img {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
 
     header {
         width: 100vw;
         height: 20vh;
+        backface-visibility: hidden;
+        /* webkit bron: https://stackoverflow.com/questions/19254146/position-fixed-not-working-in-mobile-browser */
     }
 
 
@@ -326,7 +328,7 @@ header img {
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 5vh;
+        bottom: 15vh;
     }
 
     .wordLidButton {

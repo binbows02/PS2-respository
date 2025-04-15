@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Op onze website vind je allerlei informatie over onze mooie club. Van actuele zaken over wedstrijden en trainingen tot achtergrondinformatie.">
     <link rel="icon" href="CSS/images/vcs.png">
     <title>Welkom bij VCS Den Haag!</title>
     <link rel="stylesheet" href="home page/home.css">
@@ -17,7 +18,7 @@
         <nav class="headerSpacing">
             <!-- Mobiele elementen -->
             <div class="headerHamburger">
-                <button class="squareIcon" onclick="openHamburger()">
+                <button class="squareIcon" onclick="openHamburger(); hamburgerOpened()">
                     <img src="CSS/Icons/hamburger.png" alt="hamburger">
                 </button>
             </div>
@@ -36,7 +37,7 @@
                     </div>
         
                     <div>
-                        <button class="squareIcon" onclick="openHamburger()">
+                        <button class="squareIcon" onclick="openHamburger(); hamburgerOpened()">
                             <img src="CSS/Icons/close.png" alt="close">
                         </button>
                     </div>
@@ -108,6 +109,11 @@
     </header>
 
     <main>
+        <!-- (Voor de hamburger menu) zet opacityDark erbij wanneer hamburgermenu open is -->
+        <div class="hamburgerOpenedJS">
+            <br>
+        </div>
+
         <!-- HERO -->
         <div class="topPagina">
             <div class="TPTitel">
@@ -195,18 +201,18 @@
                     </div>
                     <div class="contentBox vacCenter">
                         <div class="vacatureGrid">
-                            <article class="vacatureDiv">
+                            <div class="vacatureDiv">
                                 <img src="CSS/images/barmedewerker.jpg" alt="Barmedewerker">
                                 <p>Barmedewerker</p>
-                            </article>
-                            <article class="vacatureDiv">
+                            </div>
+                            <div class="vacatureDiv">
                                 <img src="CSS/images/materiaalman.webp" alt="Materiaalman">
                                 <p>Materiaalman</p>
-                            </article>
-                            <article class="vacatureDiv">
+                            </div>
+                            <div class="vacatureDiv">
                                 <img src="CSS/images/facilitaireZ.jpg" alt="Facilitaire Zaken">
                                 <p>Facilitaire Zaken</p>
-                            </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,6 +313,10 @@
                     <img src="CSS/images/bg3.jpg" alt="">
                 </article>
             </section>
+        </div>
+
+        <div class="roosterMobile">
+            <img src="CSS/Icons/rooster.png" alt="Rooster" onclick="window.open('Roosteres/roosters.html','_self')">
         </div>
     </main>
 

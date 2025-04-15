@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Op onze website vind je allerlei informatie over onze mooie club. Van actuele zaken over wedstrijden en trainingen tot achtergrondinformatie.">
     <link rel="icon" href="../CSS/images/vcs.png">
     <title>Roosters - VCS</title>
 
@@ -16,6 +17,47 @@
 
     <header>
         <nav class="headerSpacing">
+            <!-- Mobiele elementen -->
+            <div class="headerHamburger">
+                <button class="squareIcon" onclick="openHamburger(); hamburgerOpened()">
+                    <img src="../CSS/Icons/hamburger.png" alt="hamburger">
+                </button>
+            </div>
+
+            <!-- Zet hamburgerClosed erbij als het dicht is-->
+            <div class="hamburgerMenu hamburgerClosed hamburgerJS">
+                <div class="hamburgerTop">
+                    <div class="left">
+                        <button class="loginIcon" onclick="loginOpenWindow();">
+                            <img src="../CSS/Icons/Login.png" alt="inloggen">
+                        </button>
+        
+                        <button class="squareIcon langSearch">
+                            <img src="../CSS/Icons/Lang.png" alt="lang">
+                        </button>
+                    </div>
+        
+                    <div>
+                        <button class="squareIcon" onclick="openHamburger(); hamburgerOpened()">
+                            <img src="../CSS/Icons/close.png" alt="close">
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="hamburgerOptions">
+                    <div class="hamburgerPages">
+                        <button onclick="window.open('https://www.vcs-dh.nl/113/uitslagen/','_self')">Uitslagen</button>
+                        <button onclick="window.open('../Roosteres/roosters.html','_self');">Roosters</button>
+                        <button onclick="window.open('../Ons team/ons team.html','_self');">Ons team</button>
+                        <button onclick="window.open('https://www.vcs-dh.nl/891/vcs-historie/','_self')">Over ons</button>
+                    </div>
+                    
+                    <div class="hamburgerWL">
+                        <button class="wordLidButton" onclick="window.open('../Word lid/lidmaatschap.html','_self')">Word lid</button>
+                    </div>
+                </div>
+            </div>
+            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
             <div class="headerLeft">
                 <button class="squareIcon homeIcon" onclick="window.open('../index.html','_self')">
                     <img src="../CSS/Icons/Home.png" alt="Home">
@@ -73,6 +115,10 @@
     </header>
 
     <main class="tpg">
+        <!-- (Voor de hamburger menu) zet opacityDark erbij wanneer hamburgermenu open is -->
+        <div class="hamburgerOpenedJS">
+            <br>
+        </div>
 
         <figure class="bannerPicture">
             <div class="bannerRelative">
@@ -227,9 +273,10 @@
                         <button>&#10095;</button>
                     </div>
 
-                    <article class="wedstrijdData">
-                        <img src="../CSS/images/wedstrijd.png" alt="Wedstrijd">
-                    </article>
+                    <div class="wedstrijdData">
+                        <img src="../CSS/images/wedstrijd.png" alt="Wedstrijd" id="wedstrijdImageDesk">
+                        <img src="../CSS/images/wedstrijdMobile.png" alt="wedstrijd mobile" id="wedstrijdImageMobi">
+                    </div>
                 </div>
             </section>
 
@@ -327,6 +374,8 @@
             &#129129;
         </button>
     </footer>
+
+    <script src="../hamburger.js"></script>
 
     <script src="../footer.js"></script>
     <script src="../inloggegevens.js"></script>

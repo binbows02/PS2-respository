@@ -190,3 +190,16 @@ li {
 .verstuur:hover {
     background-color: rgba(119, 248, 198, 1);
 }
+
+@media screen and (max-width: 1400px) {
+    .footerContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .upArrow {
+        display: none;
+    }
+}

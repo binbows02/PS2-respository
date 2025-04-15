@@ -545,7 +545,7 @@ figure img {
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
     .contentBox {
         position: relative;
         padding: 60px 0px 20px 0px;
@@ -801,7 +801,6 @@ figure img {
         border: none;
 
         bottom: -9vh;
-        right: -2vw;
     }
 
     /* NIEUWS */
@@ -869,5 +868,35 @@ figure img {
     .MNbutton:hover {
         background-color: rgba(255, 219, 110, 1);
         border: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .roosterMobile {
+        position: fixed;
+        bottom: 15vh;
+        right: 0;
+
+        z-index: 4;
+
+        background-color: rgba(0, 0, 0, 0.75);
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 1vh 4vw 1vh 2vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        backface-visibility: hidden;
+    }
+
+    .roosterMobile img {
+        background-color: rgba(75, 195, 140, 1);
+        border-radius: 10px;
+
+        width: 4.5vh;
+        padding: 1.5vh;
+        box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
     }
 }

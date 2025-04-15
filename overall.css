@@ -122,6 +122,10 @@ figure {
     margin: 0;
 }
 
+.hamburgerOpenedJS {
+    display: none;
+}
+
 
 /* CONTENT */
 
@@ -270,4 +274,42 @@ figure {
     width: 100%;
 }
 
-@media screen and (max-width: 1400px) {}
+#wedstrijdImageDesk {
+    display: block;
+}
+
+#wedstrijdImageMobi {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .bannerPicture {
+        position: absolute;
+
+        top: 0px;
+        z-index: -2;
+    }
+
+    .hamburgerOpenedJS {
+        display: block;
+    }
+
+    .opacityDark {
+        position: fixed;
+        z-index: 5;
+
+        background-color: black;
+        opacity: 50%;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #wedstrijdImageDesk {
+        display: none;
+    }
+
+    #wedstrijdImageMobi {
+        display: block;
+    }
+}
