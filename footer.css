@@ -202,4 +202,9 @@ li {
     .upArrow {
         display: none;
     }
+
+    footer form input,
+    footer form textarea {
+        width: 100%;
+    }
 }
